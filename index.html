@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5ef">
+  <meta name="description" content="Shop smartphones, laptops, audio, power stations and accessories at Yunahliam Enterprise in Nairobi.">
+  <title>Yunahliam Enterprise | Shop trusted technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span>Trusted tech. Personal service.</span>
+    <span>Visit us at Westlands Business Park, Nairobi</span>
+    <a href="tel:+254726160460">Call +254 726 160 460</a>
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Yunahliam Enterprise home">
+      <span class="wordmark-icon">Y</span>
+      <span>YUNAHLIAM<small>ENTERPRISE</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="shop.html">Shop</a>
+      <a href="shop.html#categories">Categories</a>
+      <a href="about.html">Our story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-contact" href="tel:+254726160460" aria-label="Call Yunahliam Enterprise">
+      <span class="phone-icon" aria-hidden="true">↗</span><span>Talk to us</span>
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT FAVOURITE TECH STORE</p>
+        <h1 id="hero-title">Good tech.<br><span>Great feeling.</span></h1>
+        <p class="hero-text">The latest phones, laptops and everyday essentials, chosen from brands you know and backed by people who care.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="shop.html">Explore the shop <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="about.html">Why Yunahliam <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-proof"><span class="proof-mark">10<span>+</span></span><span>years helping you<br>find the right tech</span><span class="proof-divider"></span><span class="proof-stars" aria-label="Trusted local service">✳</span><span>Real people.<br>Here to help.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Featured Samsung Galaxy S26 smartphone">
+        <div class="hero-sun"></div>
+        <div class="hero-note"><span>JUST LANDED</span><b>Meet your<br>next upgrade.</b><a href="shop.html?category=Phones">Shop phones <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-image-wrap"><img src="S26-01.png" alt="Samsung Galaxy S26 smartphone"></div>
+        <div class="hero-sticker"><span>THE<br>GOOD<br>STUFF</span><b>✳</b></div>
+        <div class="hero-image-caption"><span>01 / 04</span><span>SMARTER EVERY DAY</span></div>
+      </div>
+    </section>
+
+    <section class="search-band" aria-label="Find a product">
+      <div class="search-heading"><span class="search-symbol" aria-hidden="true">⌕</span><div><b>What are you looking for?</b><small>Search our latest technology</small></div></div>
+      <form class="search-form" role="search">
+        <label class="visually-hidden" for="product-search">Search products</label>
+        <input id="product-search" type="search" placeholder="Try ‘iPhone’, ‘headphones’..." autocomplete="off">
+        <button type="submit">Search <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="search-hint">POPULAR: <button type="button" data-search="iphone">iPhone</button><button type="button" data-search="Samsung">Samsung</button><button type="button" data-search="headphones">Headphones</button></div>
+    </section>
+
+    <section class="category-section section-wrap" id="categories">
+      <div class="section-topline"><div><p class="eyebrow">A GOOD PLACE TO START</p><h2>Shop by category</h2></div><a class="text-link desktop-only" href="shop.html">Browse everything <span aria-hidden="true">→</span></a></div>
+      <div class="category-grid">
+        <button class="category-tile tile-phones" type="button" data-category="Phones">
+          <span class="category-index">01</span><span class="category-label">Phones <span aria-hidden="true">↗</span></span><img src="APPLE 17-01.png" alt="Apple iPhone 17" loading="lazy">
+        </button>
+        <button class="category-tile tile-computers" type="button" data-category="Computers">
+          <span class="category-index">02</span><span class="category-label">Computers <span aria-hidden="true">↗</span></span><img src="APPLE MACBOOK AIR 13 M5-01.png" alt="Apple MacBook Air" loading="lazy">
+        </button>
+        <button class="category-tile tile-audio" type="button" data-category="Audio">
+          <span class="category-index">03</span><span class="category-label">Audio <span aria-hidden="true">↗</span></span><img src="BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png" alt="Bose QuietComfort Ultra headphones" loading="lazy">
+        </button>
+        <button class="category-tile tile-power" type="button" data-category="Power">
+          <span class="category-index">04</span><span class="category-label">Power & more <span aria-hidden="true">↗</span></span><img src="ECOFLOW DELTA 3 2000AIR-01.png" alt="EcoFlow Delta 3 portable power station" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <section class="product-section section-wrap" id="shop">
+      <div class="section-topline product-heading">
+        <div><p class="eyebrow">THE GOOD STUFF, RIGHT NOW</p><h2>Find your next favourite</h2><p class="section-subtitle">Suggested KSh prices; confirm configuration and current stock.</p></div>
+        <div class="product-controls"><label class="visually-hidden" for="category-filter">Filter by category</label><select id="category-filter"><option value="All">All products</option><option value="Phones">Phones</option><option value="Computers">Computers</option><option value="Audio">Audio</option><option value="Power">Power</option><option value="Gaming">Gaming</option><option value="Accessories">Accessories</option><option value="Wearables">Wearables</option></select><label class="visually-hidden" for="sort-products">Sort products</label><select id="sort-products"><option value="featured">Featured</option><option value="az">Name: A to Z</option><option value="price-asc">Price: Low to high</option><option value="price-desc">Price: High to low</option></select></div>
+      </div>
+      <div class="result-line"><span id="result-count" aria-live="polite"></span><span>Need a recommendation? <a href="tel:+254726160460">We can help <span aria-hidden="true">↗</span></a></span></div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No matches yet. Try another search or category.</p>
+      <div class="load-more-wrap"><a class="button button-outline" href="shop.html">Browse all products <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="trust-band" id="about">
+      <div class="trust-visual"><img src="Apple MacBook Neo 13-01.png" alt="Apple MacBook Neo laptop" loading="lazy"><span class="trust-stamp">TECH<br>THAT<br>TRAVELS<br>WITH YOU <b>✳</b></span></div>
+      <div class="trust-copy"><p class="eyebrow">A DECADE IN YOUR CORNER</p><h2>More than a<br>place to shop.</h2><p>With 10 years in tech, we’ve built Yunahliam Enterprise around one simple thing: helping you feel good about what you buy. From the latest devices to the right everyday accessories, we make getting your tech easy.</p><a class="button button-light" href="about.html">Meet Yunahliam <span aria-hidden="true">↗</span></a></div>
+      <div class="trust-perks"><div><span>01</span><b>Trusted brands</b><small>Quality you can count on.</small></div><div><span>02</span><b>Warranty included</b><small>Products backed by warranty.</small></div><div><span>03</span><b>Here after the sale</b><small>Real support when you need it.</small></div></div>
+    </section>
+
+    <section class="feature-section section-wrap">
+      <div class="feature-copy"><p class="eyebrow">POWER THROUGH THE DAY</p><h2>Stay ready<br>for anything.</h2><p>Keep your essentials charged and your plans on track with portable power solutions from EcoFlow.</p><button class="text-link feature-link" type="button" data-category="Power">Explore power stations <span aria-hidden="true">→</span></button></div>
+      <div class="feature-image"><img src="ECOFLOW DELTA 3 2000AIR-01.png" alt="EcoFlow Delta 3 portable power station" loading="lazy"><span class="feature-tag">POWER<br>YOUR<br>PLANS <b>↗</b></span></div>
+      <div class="feature-foot"><span>GOOD ENERGY, WHEREVER YOU ARE</span><span>YUNAHLIAM / 2026</span></div>
+    </section>
+
+    <section class="service-strip" aria-label="Yunahliam service promises">
+      <div><span class="service-icon">✳</span><span><b>Warranty-backed tech</b><small>Confidence in every purchase</small></span></div>
+      <div><span class="service-icon">↗</span><span><b>Fast delivery options</b><small>Quick, careful delivery</small></span></div>
+      <div><span class="service-icon">♡</span><span><b>Support that stays</b><small>Friendly after-sales service</small></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="wordmark wordmark-light" href="index.html"><span class="wordmark-icon">Y</span><span>YUNAHLIAM<small>ENTERPRISE</small></span></a><p>Elevate your mobile experience. Click. Buy. Connect.</p><h2 class="footer-heading">Connect With Us</h2><div class="footer-socials"><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a></div></div>
+      <div class="footer-column"><h2 class="footer-heading">Shop</h2><a href="shop.html"><span aria-hidden="true">→</span> Shop all</a><a href="shop.html?category=Phones"><span aria-hidden="true">→</span> Phones</a><a href="shop.html?category=Computers"><span aria-hidden="true">→</span> Computers</a><a href="shop.html?category=Audio"><span aria-hidden="true">→</span> Audio & accessories</a></div>
+      <div class="footer-column"><h2 class="footer-heading">Support</h2><a href="about.html#about-principles"><span aria-hidden="true">→</span> Warranty information</a><a href="about.html#about-principles"><span aria-hidden="true">→</span> Delivery options</a><a href="contact.html"><span aria-hidden="true">→</span> After-sales support</a><a href="https://www.yunahliamenterprise.com/" target="_blank" rel="noreferrer"><span aria-hidden="true">→</span> Company website</a></div>
+      <div class="footer-column footer-contact"><h2 class="footer-heading">Contact Information</h2><a href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer"><span class="footer-contact-icon" aria-hidden="true">⌖</span><span>Westlands Business Park<br>Nairobi, Kenya</span></a><a href="tel:+254726160460"><span class="footer-contact-icon" aria-hidden="true">⌕</span><span>+254 726 160 460</span></a><p><span class="footer-contact-icon" aria-hidden="true">⌑</span><span>PO BOX 14797-00100</span></p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Yunahliam Enterprise. All rights reserved.</span><div><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <dialog class="inquiry-dialog" id="inquiry-dialog" aria-labelledby="inquiry-title">
+    <button class="dialog-close" type="button" aria-label="Close inquiry window">×</button>
+    <p class="eyebrow">A QUICK QUESTION</p><h2 id="inquiry-title">Let's talk tech.</h2><p class="inquiry-product" id="inquiry-product"></p><p>Call us and we’ll help with current pricing, availability and the details you need.</p><a class="button button-dark inquiry-call" href="tel:+254726160460">Call +254 726 160 460 <span aria-hidden="true">↗</span></a>
+  </dialog>
+</body>
+</html>
