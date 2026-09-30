@@ -3,41 +3,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f5ef">
+  <meta name="theme-color" content="#3db83a">
   <meta name="description" content="Browse smartphones, computers, audio, power stations, gaming and accessories from Yunahliam Enterprise.">
-  <title>Shop | Yunahliam Enterprise</title>
+  <title>All ads | Yunahliam Enterprise</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="announcement"><span>Trusted tech. Personal service.</span><span>Visit us at Westlands Business Park, Nairobi</span><a href="tel:+254726160460">Call +254 726 160 460</a></div>
   <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Yunahliam Enterprise home"><span class="wordmark-icon">Y</span><span>YUNAHLIAM<small>ENTERPRISE</small></span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" aria-current="page" href="shop.html">Shop</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></nav>
-    <a class="header-contact" href="tel:+254726160460" aria-label="Call Yunahliam Enterprise"><span class="phone-icon" aria-hidden="true">↗</span><span>Talk to us</span></a>
+    <div class="wrap header-bar">
+      <a class="wordmark" href="index.html" aria-label="Yunahliam Enterprise home"><span class="wordmark-icon">Y</span><span class="wordmark-text">YUNAHLIAM<small>ENTERPRISE</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" aria-current="page" href="shop.html">All ads</a><a href="about.html">About us</a><a href="contact.html">Contact</a></nav>
+      <div class="header-actions">
+        <a class="header-link" href="shop.html?saved=1">♡ Saved <span class="saved-count"></span></a>
+        <a class="header-link" href="tel:+254726160460">☎ 0726 160 460</a>
+        <a class="button-sell" href="tel:+254726160460">Order now</a>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
   </header>
+
   <main>
-    <section class="page-intro"><p class="eyebrow">THE YUNAHLIAM COLLECTION</p><h1>Find a little more <span>good tech.</span></h1><p>Phones, computers, sound and everyday essentials from brands you know. Ask us for current prices and availability.</p></section>
-    <section class="search-band" aria-label="Find a product"><div class="search-heading"><span class="search-symbol" aria-hidden="true">⌕</span><div><b>What are you looking for?</b><small>Search our latest technology</small></div></div><form class="search-form" role="search"><label class="visually-hidden" for="product-search">Search products</label><input id="product-search" type="search" placeholder="Try ‘iPhone’, ‘headphones’..." autocomplete="off"><button type="submit">Search <span aria-hidden="true">→</span></button></form><div class="search-hint">POPULAR: <button type="button" data-search="iphone">iPhone</button><button type="button" data-search="Samsung">Samsung</button><button type="button" data-search="headphones">Headphones</button></div></section>
-    <div class="shop-categories section-wrap" id="categories" aria-label="Browse product categories"><button type="button" data-category="All">All products</button><button type="button" data-category="Phones">Phones</button><button type="button" data-category="Computers">Computers</button><button type="button" data-category="Audio">Audio</button><button type="button" data-category="Power">Power</button><button type="button" data-category="Gaming">Gaming</button><button type="button" data-category="Accessories">Accessories</button><button type="button" data-category="Wearables">Wearables</button></div>
-    <section class="product-section shop-page-products section-wrap" id="shop">
-      <div class="section-topline product-heading"><div><p class="eyebrow">A GOOD PLACE TO START</p><h2>Shop the collection</h2><p class="section-subtitle">Suggested KSh prices; confirm configuration and current stock.</p></div><div class="product-controls"><label class="visually-hidden" for="category-filter">Filter by category</label><select id="category-filter"><option value="All">All products</option><option value="Phones">Phones</option><option value="Computers">Computers</option><option value="Audio">Audio</option><option value="Power">Power</option><option value="Gaming">Gaming</option><option value="Accessories">Accessories</option><option value="Wearables">Wearables</option></select><label class="visually-hidden" for="sort-products">Sort products</label><select id="sort-products"><option value="featured">Featured</option><option value="az">Name: A to Z</option><option value="price-asc">Price: Low to high</option><option value="price-desc">Price: High to low</option></select></div></div>
-      <div class="result-line"><span id="result-count" aria-live="polite"></span><span>Prices and stock may change. <a href="contact.html">Ask us directly ↗</a></span></div>
-      <div class="product-grid" id="product-grid"></div><p class="empty-state" id="empty-state" hidden>No matches yet. Try another search or category.</p>
-      <div class="load-more-wrap"><button class="button button-outline" id="show-all" type="button">Show all products <span aria-hidden="true">↓</span></button></div>
+    <section class="search-hero" aria-label="Search products">
+      <div class="wrap">
+        <h1>Find the right tech for you</h1>
+        <form class="search-form" role="search" action="shop.html">
+          <label class="visually-hidden" for="search-category">Category</label>
+          <select id="search-category" name="category"><option value="All">All categories</option><option value="Phones">Phones</option><option value="Computers">Computers & Tablets</option><option value="Audio">Audio & Speakers</option><option value="Power">Power Stations</option><option value="Gaming">Gaming</option><option value="Wearables">Smart Watches</option><option value="Accessories">Accessories</option></select>
+          <label class="visually-hidden" for="product-search">Search products</label>
+          <input id="product-search" name="q" type="search" placeholder="I am looking for…" autocomplete="off">
+          <button type="submit"><span aria-hidden="true">⌕</span><span class="label">Search</span></button>
+        </form>
+        <div class="search-hint">Popular: <a href="shop.html?q=iphone">iPhone</a><a href="shop.html?q=samsung">Samsung</a><a href="shop.html?q=macbook">MacBook</a><a href="shop.html?q=headphones">Headphones</a><a href="shop.html?category=Power">Power stations</a></div>
+      </div>
     </section>
-    <section class="service-strip" aria-label="Yunahliam service promises"><div><span class="service-icon">✳</span><span><b>Warranty-backed tech</b><small>Confidence in every purchase</small></span></div><div><span class="service-icon">↗</span><span><b>Fast delivery options</b><small>Quick, careful delivery</small></span></div><div><span class="service-icon">♡</span><span><b>Support that stays</b><small>Friendly after-sales service</small></span></div></section>
+    <div class="wrap market">
+      <aside class="panel sidebar" aria-label="Categories and filters">
+        <h2 class="sidebar-title">Categories</h2>
+        <ul class="category-list" id="category-list"></ul>
+        <form class="filter-block" id="price-form">
+          <h3>Price, KSh</h3>
+          <div class="price-inputs"><label class="visually-hidden" for="price-min">Minimum price</label><input id="price-min" type="number" min="0" step="500" placeholder="min" inputmode="numeric"><label class="visually-hidden" for="price-max">Maximum price</label><input id="price-max" type="number" min="0" step="500" placeholder="max" inputmode="numeric"></div>
+          <div class="filter-actions"><button class="button button-ghost" id="clear-filters" type="button">Clear</button><button class="button button-green" type="submit">Apply</button></div>
+        </form>
+        <div class="filter-block"><h3>Delivery &amp; support</h3><p class="ad-desc">All items are brand new and warranty-backed. Delivery available — call us for your location.</p></div>
+      </aside>
+      <section class="market-main" aria-labelledby="listing-title">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>›</span><span id="breadcrumb-current">All products</span></nav>
+        <div class="panel listing-head">
+          <div><h1 id="listing-title">All products</h1><span class="result-count" id="result-count" aria-live="polite"></span></div>
+          <div class="filter-actions">
+            <button class="button button-ghost filter-toggle" type="button" aria-expanded="false">Filters</button>
+            <label class="visually-hidden" for="sort-products">Sort ads</label>
+            <select id="sort-products"><option value="featured">Sort: Recommended</option><option value="price-asc">Price: Low to high</option><option value="price-desc">Price: High to low</option><option value="az">Name: A to Z</option></select>
+          </div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="panel empty-state" id="empty-state" hidden><b>No ads found.</b><br>Try another search, category or price range.</div>
+        <div class="load-more-wrap"><button class="button button-green" id="show-all" type="button">Show more ads</button></div>
+      <section class="service-strip" aria-label="Yunahliam service promises">
+        <div class="panel"><span class="service-icon">✔</span><span><b>Warranty-backed tech</b><small>Confidence in every purchase</small></span></div>
+        <div class="panel"><span class="service-icon">➜</span><span><b>Fast delivery options</b><small>Quick, careful delivery</small></span></div>
+        <div class="panel"><span class="service-icon">♡</span><span><b>Support that stays</b><small>Friendly after-sales service</small></span></div>
+      </section>
+      </section>
+    </div>
   </main>
-  <footer class="site-footer" id="contact"><div class="footer-main">
-    <div class="footer-brand"><a class="wordmark wordmark-light" href="index.html"><span class="wordmark-icon">Y</span><span>YUNAHLIAM<small>ENTERPRISE</small></span></a><p>Elevate your mobile experience. Click. Buy. Connect.</p><h2 class="footer-heading">Connect With Us</h2><div class="footer-socials"><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a></div></div>
-    <div class="footer-column"><h2 class="footer-heading">Shop</h2><a href="shop.html"><span aria-hidden="true">→</span> Shop all</a><a href="shop.html?category=Phones"><span aria-hidden="true">→</span> Phones</a><a href="shop.html?category=Computers"><span aria-hidden="true">→</span> Computers</a><a href="shop.html?category=Audio"><span aria-hidden="true">→</span> Audio & accessories</a></div>
-    <div class="footer-column"><h2 class="footer-heading">Support</h2><a href="about.html#about-principles"><span aria-hidden="true">→</span> Warranty information</a><a href="about.html#about-principles"><span aria-hidden="true">→</span> Delivery options</a><a href="contact.html"><span aria-hidden="true">→</span> After-sales support</a><a href="https://www.yunahliamenterprise.com/" target="_blank" rel="noreferrer"><span aria-hidden="true">→</span> Company website</a></div>
-    <div class="footer-column footer-contact"><h2 class="footer-heading">Contact Information</h2><a href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer"><span class="footer-contact-icon" aria-hidden="true">⌖</span><span>Westlands Business Park<br>Nairobi, Kenya</span></a><a href="tel:+254726160460"><span class="footer-contact-icon" aria-hidden="true">⌕</span><span>+254 726 160 460</span></a><p><span class="footer-contact-icon" aria-hidden="true">⌑</span><span>PO BOX 14797-00100</span></p></div>
-  </div><div class="footer-bottom"><span>© 2026 Yunahliam Enterprise. All rights reserved.</span><div><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div><a href="#top">Back to top ↑</a></div></footer>
-  <dialog class="inquiry-dialog" id="inquiry-dialog" aria-labelledby="inquiry-title"><button class="dialog-close" type="button" aria-label="Close inquiry window">×</button><p class="eyebrow">A QUICK QUESTION</p><h2 id="inquiry-title">Let's talk tech.</h2><p class="inquiry-product" id="inquiry-product"></p><p>Call us and we’ll help with current pricing, availability and the details you need.</p><a class="button button-dark inquiry-call" href="tel:+254726160460">Call +254 726 160 460 <span aria-hidden="true">↗</span></a></dialog>
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <div class="footer-brand"><a class="wordmark" href="index.html"><span class="wordmark-icon">Y</span><span class="wordmark-text">YUNAHLIAM<small>ENTERPRISE</small></span></a><p>Elevate your mobile experience. Click. Buy. Connect.</p><div class="footer-socials"><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a></div></div>
+      <div class="footer-column"><h2 class="footer-heading">Shop</h2><a href="shop.html">All ads</a><a href="shop.html?category=Phones">Phones</a><a href="shop.html?category=Computers">Computers &amp; Tablets</a><a href="shop.html?category=Audio">Audio &amp; Speakers</a><a href="shop.html?category=Power">Power Stations</a></div>
+      <div class="footer-column"><h2 class="footer-heading">Support</h2><a href="about.html#why-us">Warranty information</a><a href="about.html#why-us">Delivery options</a><a href="contact.html">After-sales support</a><a href="about.html#safety">Safety tips</a><a href="https://www.yunahliamenterprise.com/" target="_blank" rel="noreferrer">Company website</a></div>
+      <div class="footer-column"><h2 class="footer-heading">Contact</h2><a href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer">⌖ Westlands Business Park, Nairobi</a><a href="tel:+254726160460">☎ +254 726 160 460</a><p>✉ PO BOX 14797-00100</p></div>
+    </div>
+    <div class="wrap footer-bottom"><span>© 2026 Yunahliam Enterprise. All rights reserved.</span><a href="#">Back to top ↑</a></div>
+  </footer>
+  <nav class="bottom-nav" aria-label="Quick navigation"><a class="" href="index.html"><span aria-hidden="true">⌂</span><span>Home</span></a><a class="active" href="shop.html"><span aria-hidden="true">▦</span><span>All ads</span></a><a class="bottom-call" href="tel:+254726160460"><span aria-hidden="true">☎</span><span>Call</span></a><a class="" href="shop.html?saved=1"><span aria-hidden="true">♡</span><span>Saved</span></a></nav>
 </body>
 </html>

@@ -3,29 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f5ef">
+  <meta name="theme-color" content="#3db83a">
   <meta name="description" content="View product details and contact Yunahliam Enterprise for current pricing and availability.">
   <title>Product | Yunahliam Enterprise</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="announcement"><span>Trusted tech. Personal service.</span><span>Visit us at Westlands Business Park, Nairobi</span><a href="tel:+254726160460">Call +254 726 160 460</a></div>
   <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Yunahliam Enterprise home"><span class="wordmark-icon">Y</span><span>YUNAHLIAM<small>ENTERPRISE</small></span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="shop.html">Shop</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></nav>
-    <a class="header-contact" href="tel:+254726160460" aria-label="Call Yunahliam Enterprise"><span class="phone-icon" aria-hidden="true">↗</span><span>Talk to us</span></a>
+    <div class="wrap header-bar">
+      <a class="wordmark" href="index.html" aria-label="Yunahliam Enterprise home"><span class="wordmark-icon">Y</span><span class="wordmark-text">YUNAHLIAM<small>ENTERPRISE</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" aria-current="page" href="shop.html">All ads</a><a href="about.html">About us</a><a href="contact.html">Contact</a></nav>
+      <div class="header-actions">
+        <a class="header-link" href="shop.html?saved=1">♡ Saved <span class="saved-count"></span></a>
+        <a class="header-link" href="tel:+254726160460">☎ 0726 160 460</a>
+        <a class="button-sell" href="tel:+254726160460">Order now</a>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
   </header>
-  <main id="product-detail"><p class="listing-loading">Loading product details...</p></main>
-  <footer class="site-footer"><div class="footer-main">
-    <div class="footer-brand"><a class="wordmark wordmark-light" href="index.html"><span class="wordmark-icon">Y</span><span>YUNAHLIAM<small>ENTERPRISE</small></span></a><p>Elevate your mobile experience. Click. Buy. Connect.</p><h2 class="footer-heading">Connect With Us</h2><div class="footer-socials"><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a></div></div>
-    <div class="footer-column"><h2 class="footer-heading">Shop</h2><a href="shop.html"><span aria-hidden="true">→</span> Shop all</a><a href="shop.html?category=Phones"><span aria-hidden="true">→</span> Phones</a><a href="shop.html?category=Computers"><span aria-hidden="true">→</span> Computers</a><a href="shop.html?category=Audio"><span aria-hidden="true">→</span> Audio & accessories</a></div>
-    <div class="footer-column"><h2 class="footer-heading">Support</h2><a href="about.html#about-principles"><span aria-hidden="true">→</span> Warranty information</a><a href="about.html#about-principles"><span aria-hidden="true">→</span> Delivery options</a><a href="contact.html"><span aria-hidden="true">→</span> After-sales support</a><a href="https://www.yunahliamenterprise.com/" target="_blank" rel="noreferrer"><span aria-hidden="true">→</span> Company website</a></div>
-    <div class="footer-column footer-contact"><h2 class="footer-heading">Contact Information</h2><a href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer"><span class="footer-contact-icon" aria-hidden="true">⌖</span><span>Westlands Business Park<br>Nairobi, Kenya</span></a><a href="tel:+254726160460"><span class="footer-contact-icon" aria-hidden="true">⌕</span><span>+254 726 160 460</span></a><p><span class="footer-contact-icon" aria-hidden="true">⌑</span><span>PO BOX 14797-00100</span></p></div>
-  </div><div class="footer-bottom"><span>© 2026 Yunahliam Enterprise. All rights reserved.</span><div><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div><a href="#top">Back to top ↑</a></div></footer>
+
+  <main class="wrap listing-page" id="product-detail"><p class="listing-loading">Loading ad…</p></main>
+  <footer class="site-footer">
+    <div class="wrap footer-main">
+      <div class="footer-brand"><a class="wordmark" href="index.html"><span class="wordmark-icon">Y</span><span class="wordmark-text">YUNAHLIAM<small>ENTERPRISE</small></span></a><p>Elevate your mobile experience. Click. Buy. Connect.</p><div class="footer-socials"><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a></div></div>
+      <div class="footer-column"><h2 class="footer-heading">Shop</h2><a href="shop.html">All ads</a><a href="shop.html?category=Phones">Phones</a><a href="shop.html?category=Computers">Computers &amp; Tablets</a><a href="shop.html?category=Audio">Audio &amp; Speakers</a><a href="shop.html?category=Power">Power Stations</a></div>
+      <div class="footer-column"><h2 class="footer-heading">Support</h2><a href="about.html#why-us">Warranty information</a><a href="about.html#why-us">Delivery options</a><a href="contact.html">After-sales support</a><a href="about.html#safety">Safety tips</a><a href="https://www.yunahliamenterprise.com/" target="_blank" rel="noreferrer">Company website</a></div>
+      <div class="footer-column"><h2 class="footer-heading">Contact</h2><a href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer">⌖ Westlands Business Park, Nairobi</a><a href="tel:+254726160460">☎ +254 726 160 460</a><p>✉ PO BOX 14797-00100</p></div>
+    </div>
+    <div class="wrap footer-bottom"><span>© 2026 Yunahliam Enterprise. All rights reserved.</span><a href="#">Back to top ↑</a></div>
+  </footer>
+  <nav class="bottom-nav" aria-label="Quick navigation"><a class="" href="index.html"><span aria-hidden="true">⌂</span><span>Home</span></a><a class="active" href="shop.html"><span aria-hidden="true">▦</span><span>All ads</span></a><a class="bottom-call" href="tel:+254726160460"><span aria-hidden="true">☎</span><span>Call</span></a><a class="" href="shop.html?saved=1"><span aria-hidden="true">♡</span><span>Saved</span></a></nav>
 </body>
 </html>
