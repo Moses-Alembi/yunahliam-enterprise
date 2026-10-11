@@ -1,30 +1,30 @@
 const products = [
-  { name: "iPhone 17", category: "Phones", brand: "Apple", image: "APPLE 17-01.png", images: ["APPLE 17-01.png", "APPLE 17-02.png"], price: 149000, badge: "NEW IN" },
-  { name: "Samsung Galaxy S26", category: "Phones", brand: "Samsung", image: "S26-01.png", images: ["S26-01.png", "S26-02.png", "S26-03.png"], price: 129000, badge: "JUST LANDED" },
-  { name: "Samsung Galaxy A06 4/64GB", category: "Phones", brand: "Samsung", image: "A06-01.png", images: ["A06-01.png", "A06-02.png"], price: 15400, priceSource: "provided", badge: "VALUE PICK" },
-  { name: "Samsung Galaxy A27 5G 6/128GB", category: "Phones", brand: "Samsung", image: "A27-01.png", images: ["A27-01.png", "A27-02.png", "A27-03.png", "A27-04.png"], price: 40300, priceSource: "provided", badge: "PRICE PROVIDED" },
-  { name: "MacBook Air 13 M5", category: "Computers", brand: "Apple", image: "APPLE MACBOOK AIR 13 M5-01.png", images: ["APPLE MACBOOK AIR 13 M5-01.png", "APPLE MACBOOK AIR 13 M5-02.png", "APPLE MACBOOK AIR 13 M5-03.png", "APPLE MACBOOK AIR 13 M5-04.png"], price: 199000, badge: "TOP PICK" },
-  { name: "Bose QuietComfort Ultra", category: "Audio", brand: "Bose", image: "BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png", images: ["BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png", "BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-02.png", "BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-03.png"], price: 72000, badge: "FAN FAVOURITE" },
-  { name: "EcoFlow Delta 3", category: "Power", brand: "EcoFlow", image: "ECOFLOW DELTA 3 2000AIR-01.png", images: ["ECOFLOW DELTA 3 2000AIR-01.png", "ECOFLOW DELTA 3 2000AIR-02.png", "ECOFLOW DELTA 3 2000AIR-03.png", "ECOFLOW DELTA 3 2000AIR-04.png"], price: 249000, badge: "READY WHEN YOU ARE" },
-  { name: "PlayStation 5 Slim", category: "Gaming", brand: "Sony", image: "Sony PlayStation 5 (PS5) Slim-01.png", images: ["Sony PlayStation 5 (PS5) Slim-01.png", "Sony PlayStation 5 (PS5) Slim-02.png"], price: 74900, badge: "GAME ON" },
-  { name: "iPad Air 11 M4", category: "Computers", brand: "Apple", image: "APPLE IPAD AIR 11 M4-01.png", images: ["APPLE IPAD AIR 11 M4-01.png", "APPLE IPAD AIR 11 M4-02.png", "APPLE IPAD AIR 11 M4-03.png"], price: 104000, badge: "NEW IN" },
-  { name: "JBL PartyBox 520", category: "Audio", brand: "JBL", image: "JBL PartyBox 520-01.png", images: ["JBL PartyBox 520-01.png", "JBL PartyBox 520-02.png", "JBL PartyBox 520-03.png", "JBL PartyBox 520-04.png"], price: 125000, badge: "BRING THE SOUND" },
-  { name: "Samsung Galaxy Z Fold8 Ultra", category: "Phones", brand: "Samsung", image: "GALAXY Z-FOLD8 ULTRA-01.png", price: 359000, badge: "BIG IDEAS" },
-  { name: "Apple AirPods Max 2", category: "Audio", brand: "Apple", image: "Apple AirPods Max 2-01.png", price: 89000, badge: "LISTEN IN" },
-  { name: "Galaxy Watch Ultra 2025", category: "Wearables", brand: "Samsung", image: "WATCH ULTRA 47MM LTE 2025-01.png", price: 82900, badge: "GO FURTHER" },
-  { name: "UGREEN Everyday Accessories", category: "Accessories", brand: "UGREEN", image: "UGREEN ACCESSORIES A-01.png", price: 1500, priceFrom: true, badge: "LITTLE UPGRADES" },
-  { name: "MacBook Neo 13", category: "Computers", brand: "Apple", image: "Apple MacBook Neo 13-01.png", price: 89900, badge: "NEW IN" },
-  { name: "EcoFlow River 3 Plus", category: "Power", brand: "EcoFlow", image: "ECOFLOW RIVER 3 PLUS-01.png", price: 69900, badge: "POWER ON THE GO" },
-  { name: "Nintendo Switch 2", category: "Gaming", brand: "Nintendo", image: "Nintendo Switch 2.jpg", price: 74900, badge: "PLAY ANYWHERE" },
-  { name: "Bose SoundLink Flex", category: "Audio", brand: "Bose", image: "BOSE SOUNDLINK FLEX 2nd gen-01.png", price: 27900, badge: "TAKE IT OUTSIDE" },
-  { name: "Samsung Galaxy Tab A11 4/64GB", category: "Computers", brand: "Samsung", image: "Galaxy Tab A11.png", price: 21100, priceSource: "provided", badge: "PRICE PROVIDED" },
-  { name: "JBL PartyBox On-The-Go 2", category: "Audio", brand: "JBL", image: "JBL PartyBox On-The-Go 2-01.png", price: 84900, badge: "GOOD TIMES" },
-  { name: "Samsung Galaxy Z Flip8", category: "Phones", brand: "Samsung", image: "SAMSUNG GALAXY Z FLIP8-01.png", price: 179000, badge: "FOLD INTO FUN" },
-  { name: "EcoFlow Delta Pro 3", category: "Power", brand: "EcoFlow", image: "ECOFLOW DELTA PRO 3-01.png", price: 579000, badge: "POWER MORE" },
-  { name: "Bose QuietComfort Ultra Earbuds", category: "Audio", brand: "Bose", image: "BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-01.png", price: 47900, badge: "TUNE EVERYTHING OUT" },
-  { name: "Apple iPad Pro 13 M5", category: "Computers", brand: "Apple", image: "APPLE IPAD PRO 13 M5-01.png", price: 249000, badge: "PRO ALL DAY" },
-  { name: "Galaxy Watch 8 Classic", category: "Wearables", brand: "Samsung", image: "WATCH 8CLASSIC 46MM-01.png", price: 58900, badge: "MADE FOR YOU" },
-  { name: "Promate Everyday Accessories", category: "Accessories", brand: "Promate", image: "Promate products-01.png", price: 1000, priceFrom: true, badge: "SMART EXTRAS" }
+  { name: "iPhone 17", category: "Phones", brand: "Apple", image: "images/APPLE 17-01.png", images: ["images/APPLE 17-01.png", "images/APPLE 17-02.png"], price: 149000, badge: "NEW IN" },
+  { name: "Samsung Galaxy S26", category: "Phones", brand: "Samsung", image: "images/S26-01.png", images: ["images/S26-01.png", "images/S26-02.png", "images/S26-03.png"], price: 129000, badge: "JUST LANDED" },
+  { name: "Samsung Galaxy A06 4/64GB", category: "Phones", brand: "Samsung", image: "images/A06-01.png", images: ["images/A06-01.png", "images/A06-02.png"], price: 15400, priceSource: "provided", badge: "VALUE PICK" },
+  { name: "Samsung Galaxy A27 5G 6/128GB", category: "Phones", brand: "Samsung", image: "images/A27-01.png", images: ["images/A27-01.png", "images/A27-02.png", "images/A27-03.png", "images/A27-04.png"], price: 40300, priceSource: "provided", badge: "PRICE PROVIDED" },
+  { name: "MacBook Air 13 M5", category: "Computers", brand: "Apple", image: "images/APPLE MACBOOK AIR 13 M5-01.png", images: ["images/APPLE MACBOOK AIR 13 M5-01.png", "images/APPLE MACBOOK AIR 13 M5-02.png", "images/APPLE MACBOOK AIR 13 M5-03.png", "images/APPLE MACBOOK AIR 13 M5-04.png"], price: 199000, badge: "TOP PICK" },
+  { name: "Bose QuietComfort Ultra", category: "Audio", brand: "Bose", image: "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png", images: ["images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png", "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-02.png", "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-03.png"], price: 72000, badge: "FAN FAVOURITE" },
+  { name: "EcoFlow Delta 3", category: "Power", brand: "EcoFlow", image: "images/ECOFLOW DELTA 3 2000AIR-01.png", images: ["images/ECOFLOW DELTA 3 2000AIR-01.png", "images/ECOFLOW DELTA 3 2000AIR-02.png", "images/ECOFLOW DELTA 3 2000AIR-03.png", "images/ECOFLOW DELTA 3 2000AIR-04.png"], price: 249000, badge: "READY WHEN YOU ARE" },
+  { name: "PlayStation 5 Slim", category: "Gaming", brand: "Sony", image: "images/Sony PlayStation 5 (PS5) Slim-01.png", images: ["images/Sony PlayStation 5 (PS5) Slim-01.png", "images/Sony PlayStation 5 (PS5) Slim-02.png"], price: 74900, badge: "GAME ON" },
+  { name: "iPad Air 11 M4", category: "Computers", brand: "Apple", image: "images/APPLE IPAD AIR 11 M4-01.png", images: ["images/APPLE IPAD AIR 11 M4-01.png", "images/APPLE IPAD AIR 11 M4-02.png", "images/APPLE IPAD AIR 11 M4-03.png"], price: 104000, badge: "NEW IN" },
+  { name: "JBL PartyBox 520", category: "Audio", brand: "JBL", image: "images/JBL PartyBox 520-01.png", images: ["images/JBL PartyBox 520-01.png", "images/JBL PartyBox 520-02.png", "images/JBL PartyBox 520-03.png", "images/JBL PartyBox 520-04.png"], price: 125000, badge: "BRING THE SOUND" },
+  { name: "Samsung Galaxy Z Fold8 Ultra", category: "Phones", brand: "Samsung", image: "images/GALAXY Z-FOLD8 ULTRA-01.png", price: 359000, badge: "BIG IDEAS" },
+  { name: "Apple AirPods Max 2", category: "Audio", brand: "Apple", image: "images/Apple AirPods Max 2-01.png", price: 89000, badge: "LISTEN IN" },
+  { name: "Galaxy Watch Ultra 2025", category: "Wearables", brand: "Samsung", image: "images/WATCH ULTRA 47MM LTE 2025-01.png", price: 82900, badge: "GO FURTHER" },
+  { name: "UGREEN Everyday Accessories", category: "Accessories", brand: "UGREEN", image: "images/UGREEN ACCESSORIES A-01.png", price: 1500, priceFrom: true, badge: "LITTLE UPGRADES" },
+  { name: "MacBook Neo 13", category: "Computers", brand: "Apple", image: "images/Apple MacBook Neo 13-01.png", price: 89900, badge: "NEW IN" },
+  { name: "EcoFlow River 3 Plus", category: "Power", brand: "EcoFlow", image: "images/ECOFLOW RIVER 3 PLUS-01.png", price: 69900, badge: "POWER ON THE GO" },
+  { name: "Nintendo Switch 2", category: "Gaming", brand: "Nintendo", image: "images/Nintendo Switch 2.jpg", price: 74900, badge: "PLAY ANYWHERE" },
+  { name: "Bose SoundLink Flex", category: "Audio", brand: "Bose", image: "images/BOSE SOUNDLINK FLEX 2nd gen-01.png", price: 27900, badge: "TAKE IT OUTSIDE" },
+  { name: "Samsung Galaxy Tab A11 4/64GB", category: "Computers", brand: "Samsung", image: "images/Galaxy Tab A11.png", price: 21100, priceSource: "provided", badge: "PRICE PROVIDED" },
+  { name: "JBL PartyBox On-The-Go 2", category: "Audio", brand: "JBL", image: "images/JBL PartyBox On-The-Go 2-01.png", price: 84900, badge: "GOOD TIMES" },
+  { name: "Samsung Galaxy Z Flip8", category: "Phones", brand: "Samsung", image: "images/SAMSUNG GALAXY Z FLIP8-01.png", price: 179000, badge: "FOLD INTO FUN" },
+  { name: "EcoFlow Delta Pro 3", category: "Power", brand: "EcoFlow", image: "images/ECOFLOW DELTA PRO 3-01.png", price: 579000, badge: "POWER MORE" },
+  { name: "Bose QuietComfort Ultra Earbuds", category: "Audio", brand: "Bose", image: "images/BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-01.png", price: 47900, badge: "TUNE EVERYTHING OUT" },
+  { name: "Apple iPad Pro 13 M5", category: "Computers", brand: "Apple", image: "images/APPLE IPAD PRO 13 M5-01.png", price: 249000, badge: "PRO ALL DAY" },
+  { name: "Galaxy Watch 8 Classic", category: "Wearables", brand: "Samsung", image: "images/WATCH 8CLASSIC 46MM-01.png", price: 58900, badge: "MADE FOR YOU" },
+  { name: "Promate Everyday Accessories", category: "Accessories", brand: "Promate", image: "images/Promate products-01.png", price: 1000, priceFrom: true, badge: "SMART EXTRAS" }
 ];
 
 const categories = [
@@ -43,7 +43,7 @@ function productId(product) {
 }
 const priceFormatter = new Intl.NumberFormat("en-KE", { maximumFractionDigits: 0 });
 function formatPrice(product) {
-  return `${product.priceFrom ? "From " : ""}KSh ${priceFormatter.format(product.price)}`;
+  return `${product.priceFrom ? '<span class="price-from">From</span>' : ""}<span class="price-cur">KSh</span>${priceFormatter.format(product.price)}`;
 }
 function categoryLabel(key) {
   const category = categories.find((item) => item.key === key);
@@ -90,7 +90,7 @@ function adCard(product, index = 0) {
         <strong class="ad-price">${formatPrice(product)}</strong>
         <h3 class="ad-title"><a href="product.html?id=${id}">${product.name}</a></h3>
         <p class="ad-desc">${product.brand} · ${categoryLabel(product.category)}</p>
-        <div class="ad-chips"><span class="chip">Brand New</span><span class="chip chip-green">Warranty</span></div>
+        <div class="ad-chips"><span class="chip">Brand New</span><span class="chip chip-brand">Warranty</span></div>
         <span class="ad-loc">⌖ ${storeLocation}</span>
       </div>
     </article>`;
@@ -264,7 +264,7 @@ if (productDetail) {
   const requestedId = new URLSearchParams(window.location.search).get("id");
   const product = products.find((item) => productId(item) === requestedId);
   if (!product) {
-    productDetail.innerHTML = '<section class="panel listing-not-found"><h1>We could not find that item.</h1><a class="button button-green" href="shop.html">Back to all ads</a></section>';
+    productDetail.innerHTML = '<section class="panel listing-not-found"><h1>We could not find that item.</h1><a class="button button-primary" href="shop.html">Back to all ads</a></section>';
   } else {
     const id = productId(product);
     const images = product.images || [product.image];
@@ -294,11 +294,10 @@ if (productDetail) {
           </section>
         </section>
         <aside class="listing-sidebar">
-          <section class="panel listing-panel listing-price"><span class="listing-price-label">${priceLabel}</span><strong>${formatPrice(product)}</strong><small class="listing-price-note">${priceNote}</small><a class="button button-outline button-block" href="tel:+254726160460">Request call back</a></section>
+          <section class="panel listing-panel listing-price"><span class="listing-price-label">${priceLabel}</span><strong>${formatPrice(product)}</strong><small class="listing-price-note">${priceNote}</small><a class="button button-cta button-block" href="tel:+254726160460">☎ Call to order</a><ul class="reassure"><li>Warranty included</li><li>Pay only when you are satisfied</li><li>Help with delivery and setup</li></ul></section>
           <section class="panel listing-panel seller-panel">
             <div class="seller-summary"><span class="seller-avatar">Y</span><div><strong>Yunahliam Enterprise</strong><small>10 years in technology</small><small class="verified">✔ Verified seller</small></div></div>
-            <div class="seller-phone" hidden><a href="tel:+254726160460">+254 726 160 460</a></div>
-            <button class="button button-green button-block" type="button" data-reveal-contact>☎ <span>Show contact</span></button>
+            <a class="seller-phone" href="tel:+254726160460">+254 726 160 460</a>
             <a class="button button-outline button-block" href="contact.html">Send an enquiry</a>
             <a class="seller-location" href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer">⌖ Westlands Business Park, Nairobi</a>
           </section>
@@ -320,11 +319,6 @@ if (productDetail) {
     thumbnails.forEach((thumbnail, index) => thumbnail.addEventListener("click", () => showImage(index)));
     productDetail.querySelector(".gallery-previous")?.addEventListener("click", () => showImage(activeImage - 1));
     productDetail.querySelector(".gallery-next")?.addEventListener("click", () => showImage(activeImage + 1));
-    productDetail.querySelector("[data-reveal-contact]").addEventListener("click", (event) => {
-      const phone = productDetail.querySelector(".seller-phone");
-      phone.hidden = !phone.hidden;
-      event.currentTarget.querySelector("span").textContent = phone.hidden ? "Show contact" : "Hide contact";
-    });
     document.title = `${product.name} | Yunahliam Enterprise`;
   }
 }

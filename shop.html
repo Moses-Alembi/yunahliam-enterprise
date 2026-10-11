@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#3db83a">
+  <meta name="theme-color" content="#0975BA">
   <meta name="description" content="Browse smartphones, computers, audio, power stations, gaming and accessories from Yunahliam Enterprise.">
   <title>All ads | Yunahliam Enterprise</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 <body>
   <header class="site-header">
     <div class="wrap header-bar">
-      <a class="wordmark" href="index.html" aria-label="Yunahliam Enterprise home"><span class="wordmark-icon">Y</span><span class="wordmark-text">YUNAHLIAM<small>ENTERPRISE</small></span></a>
+      <a class="wordmark" href="index.html" aria-label="Yunahliam Enterprise home"><img class="wordmark-logo" src="images/logo.png" alt="Yunahliam Enterprise" width="487" height="240"></a>
       <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" aria-current="page" href="shop.html">All ads</a><a href="about.html">About us</a><a href="contact.html">Contact</a></nav>
       <div class="header-actions">
         <a class="header-link" href="shop.html?saved=1">♡ Saved <span class="saved-count"></span></a>
@@ -38,6 +39,7 @@
           <button type="submit"><span aria-hidden="true">⌕</span><span class="label">Search</span></button>
         </form>
         <div class="search-hint">Popular: <a href="shop.html?q=iphone">iPhone</a><a href="shop.html?q=samsung">Samsung</a><a href="shop.html?q=macbook">MacBook</a><a href="shop.html?q=headphones">Headphones</a><a href="shop.html?category=Power">Power stations</a></div>
+        <ul class="trust-line" aria-label="Why buy from us"><li>Brand new from trusted brands</li><li>Warranty included</li><li>Pay when you are satisfied</li><li>Fast delivery options</li></ul>
       </div>
     </section>
     <div class="wrap market">
@@ -47,7 +49,7 @@
         <form class="filter-block" id="price-form">
           <h3>Price, KSh</h3>
           <div class="price-inputs"><label class="visually-hidden" for="price-min">Minimum price</label><input id="price-min" type="number" min="0" step="500" placeholder="min" inputmode="numeric"><label class="visually-hidden" for="price-max">Maximum price</label><input id="price-max" type="number" min="0" step="500" placeholder="max" inputmode="numeric"></div>
-          <div class="filter-actions"><button class="button button-ghost" id="clear-filters" type="button">Clear</button><button class="button button-green" type="submit">Apply</button></div>
+          <div class="filter-actions"><button class="button button-ghost" id="clear-filters" type="button">Clear</button><button class="button button-primary" type="submit">Apply</button></div>
         </form>
         <div class="filter-block"><h3>Delivery &amp; support</h3><p class="ad-desc">All items are brand new and warranty-backed. Delivery available — call us for your location.</p></div>
       </aside>
@@ -63,7 +65,7 @@
         </div>
         <div class="product-grid" id="product-grid"></div>
         <div class="panel empty-state" id="empty-state" hidden><b>No ads found.</b><br>Try another search, category or price range.</div>
-        <div class="load-more-wrap"><button class="button button-green" id="show-all" type="button">Show more ads</button></div>
+        <div class="load-more-wrap"><button class="button button-primary" id="show-all" type="button">Show more ads</button></div>
       <section class="service-strip" aria-label="Yunahliam service promises">
         <div class="panel"><span class="service-icon">✔</span><span><b>Warranty-backed tech</b><small>Confidence in every purchase</small></span></div>
         <div class="panel"><span class="service-icon">➜</span><span><b>Fast delivery options</b><small>Quick, careful delivery</small></span></div>
@@ -74,7 +76,7 @@
   </main>
   <footer class="site-footer">
     <div class="wrap footer-main">
-      <div class="footer-brand"><a class="wordmark" href="index.html"><span class="wordmark-icon">Y</span><span class="wordmark-text">YUNAHLIAM<small>ENTERPRISE</small></span></a><p>Elevate your mobile experience. Click. Buy. Connect.</p><div class="footer-socials"><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a></div></div>
+      <div class="footer-brand"><a class="wordmark" href="index.html"><img class="wordmark-logo" src="images/logo.png" alt="Yunahliam Enterprise" width="487" height="240"></a><p>Elevate your mobile experience. Click. Buy. Connect.</p><div class="footer-socials"><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a></div></div>
       <div class="footer-column"><h2 class="footer-heading">Shop</h2><a href="shop.html">All ads</a><a href="shop.html?category=Phones">Phones</a><a href="shop.html?category=Computers">Computers &amp; Tablets</a><a href="shop.html?category=Audio">Audio &amp; Speakers</a><a href="shop.html?category=Power">Power Stations</a></div>
       <div class="footer-column"><h2 class="footer-heading">Support</h2><a href="about.html#why-us">Warranty information</a><a href="about.html#why-us">Delivery options</a><a href="contact.html">After-sales support</a><a href="about.html#safety">Safety tips</a><a href="https://www.yunahliamenterprise.com/" target="_blank" rel="noreferrer">Company website</a></div>
       <div class="footer-column"><h2 class="footer-heading">Contact</h2><a href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer">⌖ Westlands Business Park, Nairobi</a><a href="tel:+254726160460">☎ +254 726 160 460</a><p>✉ PO BOX 14797-00100</p></div>
