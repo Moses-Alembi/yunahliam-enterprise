@@ -322,3 +322,12 @@ if (productDetail) {
     document.title = `${product.name} | Yunahliam Enterprise`;
   }
 }
+
+/* ---------- Footer: back to top + current year ---------- */
+document.querySelectorAll("[data-year]").forEach((node) => { node.textContent = new Date().getFullYear(); });
+const backToTop = document.querySelector(".back-to-top");
+if (backToTop) {
+  const toggleBackToTop = () => backToTop.classList.toggle("show", window.scrollY > 400);
+  window.addEventListener("scroll", toggleBackToTop, { passive: true });
+  toggleBackToTop();
+}
