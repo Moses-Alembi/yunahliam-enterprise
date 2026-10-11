@@ -2,7 +2,7 @@ const products = [
   { name: "iPhone 17", category: "Phones", brand: "Apple", image: "images/APPLE 17-01.png", images: ["images/APPLE 17-01.png", "images/APPLE 17-02.png"], price: 149000, badge: "NEW IN" },
   { name: "Samsung Galaxy S26", category: "Phones", brand: "Samsung", image: "images/S26-01.png", images: ["images/S26-01.png", "images/S26-02.png", "images/S26-03.png"], price: 129000, badge: "JUST LANDED" },
   { name: "Samsung Galaxy A06 4/64GB", category: "Phones", brand: "Samsung", image: "images/A06-01.png", images: ["images/A06-01.png", "images/A06-02.png"], price: 15400, priceSource: "provided", badge: "VALUE PICK" },
-  { name: "Samsung Galaxy A27 5G 6/128GB", category: "Phones", brand: "Samsung", image: "images/A27-01.png", images: ["images/A27-01.png", "images/A27-02.png", "images/A27-03.png", "images/A27-04.png"], price: 40300, priceSource: "provided", badge: "PRICE PROVIDED" },
+  { name: "Samsung Galaxy A27 5G 6/128GB", category: "Phones", brand: "Samsung", image: "images/A27-01.png", images: ["images/A27-01.png", "images/A27-02.png", "images/A27-03.png", "images/A27-04.png"], price: 40300, priceSource: "provided", badge: "GREAT VALUE" },
   { name: "MacBook Air 13 M5", category: "Computers", brand: "Apple", image: "images/APPLE MACBOOK AIR 13 M5-01.png", images: ["images/APPLE MACBOOK AIR 13 M5-01.png", "images/APPLE MACBOOK AIR 13 M5-02.png", "images/APPLE MACBOOK AIR 13 M5-03.png", "images/APPLE MACBOOK AIR 13 M5-04.png"], price: 199000, badge: "TOP PICK" },
   { name: "Bose QuietComfort Ultra", category: "Audio", brand: "Bose", image: "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png", images: ["images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png", "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-02.png", "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-03.png"], price: 72000, badge: "FAN FAVOURITE" },
   { name: "EcoFlow Delta 3", category: "Power", brand: "EcoFlow", image: "images/ECOFLOW DELTA 3 2000AIR-01.png", images: ["images/ECOFLOW DELTA 3 2000AIR-01.png", "images/ECOFLOW DELTA 3 2000AIR-02.png", "images/ECOFLOW DELTA 3 2000AIR-03.png", "images/ECOFLOW DELTA 3 2000AIR-04.png"], price: 249000, badge: "READY WHEN YOU ARE" },
@@ -17,7 +17,7 @@ const products = [
   { name: "EcoFlow River 3 Plus", category: "Power", brand: "EcoFlow", image: "images/ECOFLOW RIVER 3 PLUS-01.png", price: 69900, badge: "POWER ON THE GO" },
   { name: "Nintendo Switch 2", category: "Gaming", brand: "Nintendo", image: "images/Nintendo Switch 2.jpg", price: 74900, badge: "PLAY ANYWHERE" },
   { name: "Bose SoundLink Flex", category: "Audio", brand: "Bose", image: "images/BOSE SOUNDLINK FLEX 2nd gen-01.png", price: 27900, badge: "TAKE IT OUTSIDE" },
-  { name: "Samsung Galaxy Tab A11 4/64GB", category: "Computers", brand: "Samsung", image: "images/Galaxy Tab A11.png", price: 21100, priceSource: "provided", badge: "PRICE PROVIDED" },
+  { name: "Samsung Galaxy Tab A11 4/64GB", category: "Computers", brand: "Samsung", image: "images/Galaxy Tab A11.png", price: 21100, priceSource: "provided", badge: "GREAT VALUE" },
   { name: "JBL PartyBox On-The-Go 2", category: "Audio", brand: "JBL", image: "images/JBL PartyBox On-The-Go 2-01.png", price: 84900, badge: "GOOD TIMES" },
   { name: "Samsung Galaxy Z Flip8", category: "Phones", brand: "Samsung", image: "images/SAMSUNG GALAXY Z FLIP8-01.png", price: 179000, badge: "FOLD INTO FUN" },
   { name: "EcoFlow Delta Pro 3", category: "Power", brand: "EcoFlow", image: "images/ECOFLOW DELTA PRO 3-01.png", price: 579000, badge: "POWER MORE" },
@@ -36,7 +36,6 @@ const categories = [
   { key: "Wearables", label: "Smart Watches" },
   { key: "Accessories", label: "Accessories" }
 ];
-const storeLocation = "Westlands, Nairobi";
 
 function productId(product) {
   return product.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -54,7 +53,7 @@ function categoryImage(key) {
   return product ? product.image : "";
 }
 function countLabel(count) {
-  return `${count} ${count === 1 ? "ad" : "ads"}`;
+  return `${count} ${count === 1 ? "product" : "products"}`;
 }
 
 /* ---------- Saved items (per browser) ---------- */
@@ -77,13 +76,11 @@ updateSavedCount();
 function adCard(product, index = 0) {
   const id = productId(product);
   const isSaved = saved.has(id);
-  const photoCount = (product.images || [product.image]).length;
   return `
     <article class="ad-card" style="animation-delay:${Math.min(index * 30, 240)}ms">
       <a class="ad-photo" href="product.html?id=${id}" aria-label="View ${product.name}">
         <img src="${product.image}" alt="${product.name}" loading="lazy">
         <span class="ad-tag">${product.badge}</span>
-        <span class="ad-count">${photoCount} ${photoCount === 1 ? "photo" : "photos"}</span>
       </a>
       <button class="ad-save" type="button" data-save="${id}" aria-label="Save ${product.name}" aria-pressed="${isSaved}">${isSaved ? "♥" : "♡"}</button>
       <div class="ad-body">
@@ -91,7 +88,6 @@ function adCard(product, index = 0) {
         <h3 class="ad-title"><a href="product.html?id=${id}">${product.name}</a></h3>
         <p class="ad-desc">${product.brand} · ${categoryLabel(product.category)}</p>
         <div class="ad-chips"><span class="chip">Brand New</span><span class="chip chip-brand">Warranty</span></div>
-        <span class="ad-loc">⌖ ${storeLocation}</span>
       </div>
     </article>`;
 }
@@ -120,7 +116,7 @@ document.addEventListener("click", (event) => {
   document.dispatchEvent(new CustomEvent("saved-change"));
 });
 
-/* ---------- Home page: trending ads ---------- */
+/* ---------- Home page: featured products ---------- */
 const trendingGrid = document.querySelector("#trending-grid");
 if (trendingGrid) {
   renderCategoryList(document.querySelector("#category-list"), { asLinks: true });
@@ -184,7 +180,7 @@ if (productGrid) {
 
   function render() {
     const matches = filteredProducts();
-    const title = state.savedOnly ? "Saved ads" : categoryLabel(state.category);
+    const title = state.savedOnly ? "Saved items" : categoryLabel(state.category);
     productGrid.innerHTML = matches.slice(0, state.visible).map(adCard).join("");
     listingTitle.textContent = `${title}${state.query ? ` matching “${state.query}”` : ""}`;
     breadcrumbCurrent.textContent = title;
@@ -264,7 +260,7 @@ if (productDetail) {
   const requestedId = new URLSearchParams(window.location.search).get("id");
   const product = products.find((item) => productId(item) === requestedId);
   if (!product) {
-    productDetail.innerHTML = '<section class="panel listing-not-found"><h1>We could not find that item.</h1><a class="button button-primary" href="shop.html">Back to all ads</a></section>';
+    productDetail.innerHTML = '<section class="panel listing-not-found"><h1>We could not find that item.</h1><a class="button button-primary" href="shop.html">Back to the shop</a></section>';
   } else {
     const id = productId(product);
     const images = product.images || [product.image];
@@ -275,7 +271,7 @@ if (productDetail) {
     productDetail.innerHTML = `
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>›</span><a href="shop.html?category=${product.category}">${categoryLabel(product.category)}</a><span>›</span><span>${product.name}</span></nav>
       <div class="listing-layout">
-        <section class="panel listing-main" aria-label="Product listing">
+        <section class="panel listing-main" aria-label="Product details">
           <div class="listing-gallery">
             <div class="listing-image-stage">
               ${images.length > 1 ? '<button class="gallery-arrow gallery-previous" type="button" aria-label="Previous image">‹</button>' : ""}
@@ -287,24 +283,24 @@ if (productDetail) {
           </div>
           <section class="listing-details">
             <div class="listing-title-row"><h1>${product.name}</h1><button class="listing-save" type="button" data-save="${id}" aria-label="Save ${product.name}" aria-pressed="${isSaved}">${isSaved ? "♥" : "♡"}</button></div>
-            <div class="listing-meta"><span>⌖ ${storeLocation}</span><span class="verified">✔ Verified seller</span><span>${product.badge}</span></div>
+            <div class="listing-meta"><span>${product.brand}</span><span>${categoryLabel(product.category)}</span><span class="listing-badge">${product.badge}</span></div>
             <dl class="listing-specs"><div><dt>Brand</dt><dd>${product.brand}</dd></div><div><dt>Condition</dt><dd>Brand New</dd></div><div><dt>Type</dt><dd>${categoryLabel(product.category)}</dd></div><div><dt>Warranty</dt><dd>Included</dd></div></dl>
-            <div class="listing-description"><h2>Description</h2><p>${product.name} from ${product.brand}, listed in our ${categoryLabel(product.category).toLowerCase()} collection. Contact Yunahliam Enterprise to confirm current pricing, stock and available configurations. Our team can also help with product-specific warranty details, delivery and after-sales support.</p></div>
-            <div class="listing-share"><span>Share this ad</span><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Yunahliam on Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Yunahliam on Instagram">◎</a></div>
+            <div class="listing-description"><h2>Description</h2><p>${product.name} from ${product.brand}, part of our ${categoryLabel(product.category).toLowerCase()} range. Call or message Yunahliam Enterprise to confirm current pricing, stock and available configurations. Our team can also help with product-specific warranty details, delivery and after-sales support.</p></div>
+            <div class="listing-share"><span>Follow us</span><a href="https://www.facebook.com/share/1cDpzyPnNR/" target="_blank" rel="noreferrer" aria-label="Yunahliam on Facebook">f</a><a href="https://www.instagram.com/yunahliam.enterprise/" target="_blank" rel="noreferrer" aria-label="Yunahliam on Instagram">◎</a></div>
           </section>
         </section>
         <aside class="listing-sidebar">
-          <section class="panel listing-panel listing-price"><span class="listing-price-label">${priceLabel}</span><strong>${formatPrice(product)}</strong><small class="listing-price-note">${priceNote}</small><a class="button button-cta button-block" href="tel:+254726160460">☎ Call to order</a><ul class="reassure"><li>Warranty included</li><li>Pay only when you are satisfied</li><li>Help with delivery and setup</li></ul></section>
+          <section class="panel listing-panel listing-price"><span class="listing-price-label">${priceLabel}</span><strong>${formatPrice(product)}</strong><small class="listing-price-note">${priceNote}</small><a class="button button-cta button-block" href="tel:+254726160460">☎ Call to order</a><ul class="reassure"><li>Warranty included</li><li>Tax-compliant invoice</li><li>Delivery options available</li></ul></section>
           <section class="panel listing-panel seller-panel">
-            <div class="seller-summary"><span class="seller-avatar">Y</span><div><strong>Yunahliam Enterprise</strong><small>10 years in technology</small><small class="verified">✔ Verified seller</small></div></div>
+            <div class="seller-summary"><img class="seller-logo" src="images/logo.png" alt="" width="487" height="240"><div><strong>Questions about this product?</strong><small>Our team can confirm stock, colours and delivery for you.</small></div></div>
             <a class="seller-phone" href="tel:+254726160460">+254 726 160 460</a>
             <a class="button button-outline button-block" href="contact.html">Send an enquiry</a>
             <a class="seller-location" href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer">⌖ Westlands Business Park, Nairobi</a>
           </section>
-          <section class="panel listing-panel safety-panel"><h2>Safety tips</h2><ul><li>Avoid paying in advance before receiving the item.</li><li>Meet in a safe public place when collecting in person.</li><li>Check the exact model and condition before you buy.</li><li>Inspect the item and included accessories.</li><li>Pay only when you are satisfied.</li></ul></section>
+          <section class="panel listing-panel promise-panel"><h2>Why buy from Yunahliam</h2><ul class="reassure"><li>Genuine, brand-new stock</li><li>Warranty on every device</li><li>Honest advice before you buy</li><li>After-sales support that stays</li></ul><a class="promise-link" href="about.html#promise">Read our promise</a></section>
         </aside>
       </div>
-      ${similar.length ? `<section class="similar-ads"><h2>Similar adverts</h2><div class="product-grid">${similar.map(adCard).join("")}</div></section>` : ""}`;
+      ${similar.length ? `<section class="similar-ads"><h2>You may also like</h2><div class="product-grid">${similar.map(adCard).join("")}</div></section>` : ""}`;
 
     const mainImage = productDetail.querySelector(".listing-main-image");
     const thumbnails = [...productDetail.querySelectorAll(".listing-thumbnail")];
