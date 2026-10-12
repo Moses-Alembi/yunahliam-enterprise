@@ -61,6 +61,21 @@ export function createApp({ db, config, pesapal }) {
     res.type("application/xml").send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`);
   });
 
+  // Clean URLs: /shop.html redirects to /shop, and /shop is served from shop.html. Matches the static .htaccess.
+  const pageNames = new Set(["index", "shop", "product", "about", "contact", "cart", "checkout", "order", "admin"]);
+  app.use((req, res, next) => {
+    if (req.method !== "GET" && req.method !== "HEAD") return next();
+    const query = req.url.slice(req.path.length);
+    const htmlMatch = req.path.match(/^\/([a-z]+)\.html$/i);
+    if (htmlMatch && pageNames.has(htmlMatch[1].toLowerCase())) {
+      const clean = htmlMatch[1].toLowerCase() === "index" ? "/" : `/${htmlMatch[1].toLowerCase()}`;
+      return res.redirect(301, clean + query);
+    }
+    const name = req.path.slice(1).toLowerCase();
+    if (pageNames.has(name)) req.url = `/${name}.html${query}`;
+    next();
+  });
+
   // Pages and scripts revalidate on every visit so a deploy shows up at once; photos are cached for a day.
   const site = express.static(config.siteRoot, {
     index: "index.html",

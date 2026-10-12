@@ -1,0 +1,19 @@
+{
+  "name": "yunahliam-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yunahliam Enterprise storefront + API. Entry point: server/src/server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server/src/server.js",
+    "seed": "node server/scripts/seed.js",
+    "create-admin": "node server/scripts/create-admin.js",
+    "test": "npm test --prefix server"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
