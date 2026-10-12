@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#0975BA">
   <meta name="description" content="View product details and contact Yunahliam Enterprise for current pricing and availability.">
   <title>Product | Yunahliam Enterprise</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yunahliam Enterprise">
+  <meta property="og:title" content="Product | Yunahliam Enterprise">
+  <meta property="og:description" content="View product details and contact Yunahliam Enterprise for current pricing and availability.">
+  <meta property="og:image" content="images/logo.png">
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +26,13 @@
       <div class="header-actions">
         <a class="header-link" href="shop.html?saved=1">♡ Saved <span class="saved-count"></span></a>
         <a class="header-link" href="tel:+254726160460">☎ 0726 160 460</a>
-        <a class="button-sell" href="tel:+254726160460">Order now</a>
+        <a class="button-sell header-cart" href="cart.html">🛒 Cart <span class="cart-count"></span></a>
       </div>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
-  <main class="wrap listing-page" id="product-detail"><p class="listing-loading">Loading product…</p></main>
+  <main class="wrap detail-page" id="product-detail"><p class="detail-loading">Loading product…</p></main>
   <footer class="site-footer">
     <div class="wrap footer-main">
       <div class="footer-brand">
@@ -41,7 +46,7 @@
         </div>
       </div>
       <nav class="footer-column" aria-label="Shop"><h2 class="footer-heading">Shop</h2><ul><li><a href="shop.html">All products</a></li><li><a href="shop.html?category=Phones">Phones</a></li><li><a href="shop.html?category=Computers">Computers &amp; Tablets</a></li><li><a href="shop.html?category=Audio">Audio &amp; Speakers</a></li><li><a href="shop.html?category=Power">Power Stations</a></li><li><a href="shop.html?category=Accessories">Accessories</a></li></ul></nav>
-      <nav class="footer-column" aria-label="Support"><h2 class="footer-heading">Support</h2><ul><li><a href="about.html#why-us">Warranty information</a></li><li><a href="about.html#why-us">Delivery options</a></li><li><a href="contact.html">After-sales support</a></li><li><a href="about.html#promise">Our promise</a></li><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact us</a></li></ul></nav>
+      <nav class="footer-column" aria-label="Support"><h2 class="footer-heading">Support</h2><ul><li><a href="about.html#why-us">Warranty information</a></li><li><a href="about.html#why-us">Delivery options</a></li><li><a href="order.html">Track your order</a></li><li><a href="contact.html">After-sales support</a></li><li><a href="about.html#promise">Our promise</a></li><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact us</a></li></ul></nav>
       <div class="footer-contact"><h2 class="footer-heading">Contact information</h2>
         <ul>
           <li><span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></span><a href="https://maps.google.com/?q=Westlands+Business+Park+Nairobi" target="_blank" rel="noreferrer">Westlands Business Park, Nairobi, Kenya</a></li>
@@ -55,6 +60,6 @@
     <div class="footer-bottom-bar"><div class="wrap footer-bottom"><span>&copy; <span data-year>2026</span> <b>Yunahliam Enterprise</b>. All rights reserved.</span><nav class="footer-legal" aria-label="Footer"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="about.html#promise">Our promise</a></nav></div></div>
   </footer>
   <a class="back-to-top" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m-6 6 6-6 6 6"/></svg></a>
-  <nav class="bottom-nav" aria-label="Quick navigation"><a class="" href="index.html"><span aria-hidden="true">⌂</span><span>Home</span></a><a class="active" href="shop.html"><span aria-hidden="true">▦</span><span>Shop</span></a><a class="bottom-call" href="tel:+254726160460"><span aria-hidden="true">☎</span><span>Call</span></a><a class="" href="shop.html?saved=1"><span aria-hidden="true">♡</span><span>Saved</span></a></nav>
+  <nav class="bottom-nav" aria-label="Quick navigation"><a class="" href="index.html"><span aria-hidden="true">⌂</span><span>Home</span></a><a class="active" href="shop.html"><span aria-hidden="true">▦</span><span>Shop</span></a><a class="bottom-call" href="tel:+254726160460"><span aria-hidden="true">☎</span><span>Call</span></a><a class="" href="shop.html?saved=1"><span aria-hidden="true">♡</span><span>Saved</span></a><a class="" href="cart.html"><span aria-hidden="true" class="tab-icon">🛒<span class="cart-count"></span></span><span>Cart</span></a></nav>
 </body>
 </html>

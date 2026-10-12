@@ -1,0 +1,1452 @@
+[
+  {
+    "slug": "iphone-17",
+    "name": "iPhone 17",
+    "brand": "Apple",
+    "category": "Phones",
+    "price": 149000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/APPLE 17-01.png",
+      "images/APPLE 17-02.png"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "slug": "samsung-galaxy-s26",
+    "name": "Samsung Galaxy S26",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 129000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "JUST LANDED",
+    "images": [
+      "images/S26-01.png",
+      "images/S26-02.png",
+      "images/S26-03.png"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "slug": "samsung-galaxy-a06-4-64gb",
+    "name": "Samsung Galaxy A06 4/64GB",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 15400,
+    "priceFrom": false,
+    "priceConfirmed": true,
+    "badge": "VALUE PICK",
+    "images": [
+      "images/A06-01.png",
+      "images/A06-02.png",
+      "images/ChatGPT Image Sep 7, 2026, 08_47_52 PM.png",
+      "images/ChatGPT Image Sep 7, 2026, 08_56_29 PM.png",
+      "images/Ad Series-04.png",
+      "images/Final Ads-02.png"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "slug": "samsung-galaxy-a27-5g-6-128gb",
+    "name": "Samsung Galaxy A27 5G 6/128GB",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 40300,
+    "priceFrom": false,
+    "priceConfirmed": true,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/A27-01.png",
+      "images/A27-02.png",
+      "images/A27-03.png",
+      "images/A27-04.png",
+      "images/ChatGPT Image Sep 7, 2026, 08_56_46 PM.png",
+      "images/Ad Series-03.png",
+      "images/Final Ads-03.png"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "slug": "macbook-air-13-m5",
+    "name": "MacBook Air 13 M5",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 199000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "TOP PICK",
+    "images": [
+      "images/APPLE MACBOOK AIR 13 M5-01.png",
+      "images/APPLE MACBOOK AIR 13 M5-02.png",
+      "images/APPLE MACBOOK AIR 13 M5-03.png",
+      "images/APPLE MACBOOK AIR 13 M5-04.png"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "slug": "bose-quietcomfort-ultra",
+    "name": "Bose QuietComfort Ultra",
+    "brand": "Bose",
+    "category": "Audio",
+    "price": 72000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "FAN FAVOURITE",
+    "images": [
+      "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-01.png",
+      "images/BOSE QUIETCOMFORT ULTRA HEADPHONES 2ND GEN-02.png",
+      "images/Bose QuietComfort Ultra-01.png",
+      "images/Bose QuietComfort Ultra-02.png",
+      "images/QUIETCOMFORT ULTRA-01.png",
+      "images/QUIETCOMFORT ULTRA-02.png",
+      "images/BOSE QUIETCOMFORT ULTRA HEADPHONES-01.png"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "slug": "ecoflow-delta-3",
+    "name": "EcoFlow Delta 3",
+    "brand": "EcoFlow",
+    "category": "Power",
+    "price": 249000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "READY WHEN YOU ARE",
+    "images": [
+      "images/ECOFLOW DELTA 3 2000AIR-01.png",
+      "images/ECOFLOW DELTA 3 2000AIR-02.png",
+      "images/ECOFLOW DELTA 3 2000AIR-03.png",
+      "images/ECOFLOW DELTA 3 2000AIR-04.png"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "slug": "playstation-5-slim",
+    "name": "PlayStation 5 Slim",
+    "brand": "Sony",
+    "category": "Gaming",
+    "price": 74900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GAME ON",
+    "images": [
+      "images/Sony PlayStation 5 (PS5) Slim-01.png",
+      "images/Sony PlayStation 5 (PS5) Slim-02.png",
+      "images/Sony PlayStation 5 (PS5) Slim-03.png"
+    ],
+    "sortOrder": 7
+  },
+  {
+    "slug": "ipad-air-11-m4",
+    "name": "iPad Air 11 M4",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 104000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/APPLE IPAD AIR 11 M4-01.png",
+      "images/APPLE IPAD AIR 11 M4-02.png",
+      "images/APPLE IPAD AIR 11 M4-03.png"
+    ],
+    "sortOrder": 8
+  },
+  {
+    "slug": "jbl-partybox-520",
+    "name": "JBL PartyBox 520",
+    "brand": "JBL",
+    "category": "Audio",
+    "price": 125000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BRING THE SOUND",
+    "images": [
+      "images/JBL PartyBox 520-01.png",
+      "images/JBL PartyBox 520-02.png",
+      "images/JBL PartyBox 520-03.png",
+      "images/JBL PartyBox 520-04.png",
+      "images/JBL PartyBox 520-05.png"
+    ],
+    "sortOrder": 9
+  },
+  {
+    "slug": "samsung-galaxy-z-fold8-ultra",
+    "name": "Samsung Galaxy Z Fold8 Ultra",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 359000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BIG IDEAS",
+    "images": [
+      "images/GALAXY Z-FOLD8 ULTRA-01.png",
+      "images/GALAXY Z-FOLD8 ULTRA-02.png",
+      "images/GALAXY Z-FOLD8 ULTRA-03.png",
+      "images/GALAXY Z-FOLD8 ULTRA-04.png",
+      "images/GALAXY Z-FOLD8 ULTRA-05.png"
+    ],
+    "sortOrder": 10
+  },
+  {
+    "slug": "apple-airpods-max-2",
+    "name": "Apple AirPods Max 2",
+    "brand": "Apple",
+    "category": "Audio",
+    "price": 89000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "LISTEN IN",
+    "images": [
+      "images/Apple AirPods Max 2-01.png",
+      "images/Apple AirPods Max 2-02.png",
+      "images/Apple AirPods Max 2-03.png",
+      "images/APPLE AIRPODS Max-01.png",
+      "images/APPLE AIRPODS Max-02.png",
+      "images/APPLE AIRPODS Max-03.png",
+      "images/APPLE AIRPODS Max-04.png",
+      "images/APPLE AIRPODS Max-05.png"
+    ],
+    "sortOrder": 11
+  },
+  {
+    "slug": "galaxy-watch-ultra-2025",
+    "name": "Galaxy Watch Ultra 2025",
+    "brand": "Samsung",
+    "category": "Wearables",
+    "price": 82900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GO FURTHER",
+    "images": [
+      "images/WATCH ULTRA 47MM LTE 2025-01.png",
+      "images/WATCH ULTRA 47MM LTE 2025-02.png",
+      "images/WATCH ULTRA 47MM LTE 2025-03.png",
+      "images/WATCH ULTRA 47MM LTE 2025-04.png"
+    ],
+    "sortOrder": 12
+  },
+  {
+    "slug": "ugreen-everyday-accessories",
+    "name": "UGREEN Everyday Accessories",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 1500,
+    "priceFrom": true,
+    "priceConfirmed": false,
+    "badge": "LITTLE UPGRADES",
+    "images": [
+      "images/UGREEN ACCESSORIES A-01.png",
+      "images/UGREEN ACCESSORIES A-02.png",
+      "images/UGREEN ACCESSORIES A-03.png",
+      "images/UGREEN ACCESSORIES A-04.png",
+      "images/UGREEN ACCESSORIES A-05.png",
+      "images/UGREEN ACCESSORIES A-06.png",
+      "images/UGREEN ACCESSORIES A-07.png",
+      "images/UGREEN ACCESSORIES A-08.png",
+      "images/UGREEN ACCESSORIES A-09.png",
+      "images/UGREEN ACCESSORIES A-10.png"
+    ],
+    "sortOrder": 13
+  },
+  {
+    "slug": "macbook-neo-13",
+    "name": "MacBook Neo 13",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 89900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/Apple MacBook Neo 13-01.png",
+      "images/Apple MacBook Neo 13-02.png",
+      "images/Apple MacBook Neo 13-03.png",
+      "images/Apple MacBook Neo 13-04.png",
+      "images/APPLE MACBOOK NEO-01.png",
+      "images/APPLE MACBOOK NEO-02.png"
+    ],
+    "sortOrder": 14
+  },
+  {
+    "slug": "ecoflow-river-3-plus",
+    "name": "EcoFlow River 3 Plus",
+    "brand": "EcoFlow",
+    "category": "Power",
+    "price": 69900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "POWER ON THE GO",
+    "images": [
+      "images/ECOFLOW RIVER 3 PLUS-01.png",
+      "images/ECOFLOW RIVER 3 PLUS-02.png",
+      "images/ECOFLOW RIVER 3 PLUS-03.png",
+      "images/ECOFLOW RIVER 3 PLUS-04.png",
+      "images/ECOFLOW RIVER 3 PLUS-05.png",
+      "images/ECOFLOW RIVER 3 PLUS-06.png"
+    ],
+    "sortOrder": 15
+  },
+  {
+    "slug": "nintendo-switch-2",
+    "name": "Nintendo Switch 2",
+    "brand": "Nintendo",
+    "category": "Gaming",
+    "price": 74900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "PLAY ANYWHERE",
+    "images": [
+      "images/Nintendo Switch 2.jpg",
+      "images/Nintendo.jpg"
+    ],
+    "sortOrder": 16
+  },
+  {
+    "slug": "bose-soundlink-flex",
+    "name": "Bose SoundLink Flex",
+    "brand": "Bose",
+    "category": "Audio",
+    "price": 27900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "TAKE IT OUTSIDE",
+    "images": [
+      "images/BOSE SOUNDLINK FLEX 2nd gen-01.png",
+      "images/BOSE SOUNDLINK FLEX 2nd gen-02.png",
+      "images/BOSE SOUNDLINK FLEX 2nd gen-03.png",
+      "images/BOSE SOUNDLINK FLEX 2nd gen-04.png",
+      "images/SOUNDLINK FLEX-01.png",
+      "images/SOUNDLINK FLEX-02.png",
+      "images/SOUNDLINK FLEX-03.png"
+    ],
+    "sortOrder": 17
+  },
+  {
+    "slug": "samsung-galaxy-tab-a11-4-64gb",
+    "name": "Samsung Galaxy Tab A11 4/64GB",
+    "brand": "Samsung",
+    "category": "Computers",
+    "price": 21100,
+    "priceFrom": false,
+    "priceConfirmed": true,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/Galaxy Tab A11.png",
+      "images/Ad Series-02.png",
+      "images/Final Ads-04.png"
+    ],
+    "sortOrder": 18
+  },
+  {
+    "slug": "jbl-partybox-on-the-go-2",
+    "name": "JBL PartyBox On-The-Go 2",
+    "brand": "JBL",
+    "category": "Audio",
+    "price": 84900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GOOD TIMES",
+    "images": [
+      "images/JBL PartyBox On-The-Go 2-01.png",
+      "images/JBL PartyBox On-The-Go 2-02.png",
+      "images/JBL PartyBox On-The-Go 2-03.png",
+      "images/JBL PartyBox On-The-Go 2-04.png",
+      "images/JBL PartyBox On-The-Go 2-05.png"
+    ],
+    "sortOrder": 19
+  },
+  {
+    "slug": "samsung-galaxy-z-flip8",
+    "name": "Samsung Galaxy Z Flip8",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 179000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "FOLD INTO FUN",
+    "images": [
+      "images/SAMSUNG GALAXY Z FLIP8-01.png",
+      "images/SAMSUNG GALAXY Z FLIP8-02.png",
+      "images/SAMSUNG GALAXY Z FLIP8-03.png"
+    ],
+    "sortOrder": 20
+  },
+  {
+    "slug": "ecoflow-delta-pro-3",
+    "name": "EcoFlow Delta Pro 3",
+    "brand": "EcoFlow",
+    "category": "Power",
+    "price": 579000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "POWER MORE",
+    "images": [
+      "images/ECOFLOW DELTA PRO 3-01.png",
+      "images/ECOFLOW DELTA PRO 3-02.png",
+      "images/ECOFLOW DELTA PRO 3-03.png"
+    ],
+    "sortOrder": 21
+  },
+  {
+    "slug": "bose-quietcomfort-ultra-earbuds",
+    "name": "Bose QuietComfort Ultra Earbuds",
+    "brand": "Bose",
+    "category": "Audio",
+    "price": 47900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "TUNE EVERYTHING OUT",
+    "images": [
+      "images/BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-01.png",
+      "images/BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-02.png",
+      "images/BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-03.png",
+      "images/BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-04.png",
+      "images/BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-05.png",
+      "images/BOSE QUIETCOMFORT ULTRA EARBUDS 2ND GEN-06.png",
+      "images/Bose-01.png",
+      "images/Bose-02.png"
+    ],
+    "sortOrder": 22
+  },
+  {
+    "slug": "apple-ipad-pro-13-m5",
+    "name": "Apple iPad Pro 13 M5",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 249000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "PRO ALL DAY",
+    "images": [
+      "images/APPLE IPAD PRO 13 M5-01.png",
+      "images/APPLE IPAD PRO 13 M5-02.png",
+      "images/Apple iPad Pro 13-inch M5-01.png",
+      "images/Apple iPad Pro 13-inch M5-02.png"
+    ],
+    "sortOrder": 23
+  },
+  {
+    "slug": "galaxy-watch-8-classic",
+    "name": "Galaxy Watch 8 Classic",
+    "brand": "Samsung",
+    "category": "Wearables",
+    "price": 58900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "MADE FOR YOU",
+    "images": [
+      "images/WATCH 8CLASSIC 46MM-01.png",
+      "images/WATCH 8CLASSIC 46MM-02.png"
+    ],
+    "sortOrder": 24
+  },
+  {
+    "slug": "promate-everyday-accessories",
+    "name": "Promate Everyday Accessories",
+    "brand": "Promate",
+    "category": "Accessories",
+    "price": 1000,
+    "priceFrom": true,
+    "priceConfirmed": false,
+    "badge": "SMART EXTRAS",
+    "images": [
+      "images/Promate products-01.png",
+      "images/Promate products-02.png",
+      "images/Promate products-03.png",
+      "images/Promate products-04.png",
+      "images/Promate products-05.png",
+      "images/Promate products-06.png",
+      "images/Promate products-07.png",
+      "images/Promate products-08.png",
+      "images/Promate products-09.png",
+      "images/Promate products-10.png",
+      "images/Promate products-11.png"
+    ],
+    "sortOrder": 25
+  },
+  {
+    "slug": "iphone-17-pro-max",
+    "name": "iPhone 17 Pro Max",
+    "brand": "Apple",
+    "category": "Phones",
+    "price": 215000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/APPLE 17PROMAX-01.png",
+      "images/APPLE 17PROMAX-02.png",
+      "images/APPLE 17PROMAX-03.png"
+    ],
+    "sortOrder": 26
+  },
+  {
+    "slug": "iphone-air",
+    "name": "iPhone Air",
+    "brand": "Apple",
+    "category": "Phones",
+    "price": 165000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/Iphone Air-01.png",
+      "images/Iphone Air-02.png"
+    ],
+    "sortOrder": 27
+  },
+  {
+    "slug": "samsung-galaxy-s25-ultra",
+    "name": "Samsung Galaxy S25 Ultra",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 155000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "FLAGSHIP",
+    "images": [
+      "images/S25 Ultra-01.png",
+      "images/S25 Ultra-02.png",
+      "images/S25 Ultra-03.png",
+      "images/S25 Ultra-04.png",
+      "images/S25 Ultra-05.png"
+    ],
+    "sortOrder": 28
+  },
+  {
+    "slug": "samsung-galaxy-z-fold7",
+    "name": "Samsung Galaxy Z Fold7",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 245000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BIG IDEAS",
+    "images": [
+      "images/Galaxy Fold 7-01.png",
+      "images/Galaxy Fold 7-02.png",
+      "images/Galaxy Fold 7-03.png",
+      "images/Galaxy Fold 7-04.png",
+      "images/Galaxy Fold 7-05.png",
+      "images/Galaxy Fold 7-06.png",
+      "images/Galaxy Fold 7-07.png",
+      "images/Galaxy Fold 7-08.png",
+      "images/Galaxy Fold 7-09.png"
+    ],
+    "sortOrder": 29
+  },
+  {
+    "slug": "samsung-galaxy-z-fold8-16gb-1tb",
+    "name": "Samsung Galaxy Z Fold8 16GB/1TB",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 289000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "MAX STORAGE",
+    "images": [
+      "images/GALAXY Z-FOLD8  161TB-01.png",
+      "images/GALAXY Z-FOLD8  161TB-02.png"
+    ],
+    "sortOrder": 30
+  },
+  {
+    "slug": "samsung-galaxy-a57-5g",
+    "name": "Samsung Galaxy A57 5G",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 58000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/A57-01.png",
+      "images/A57-02.png",
+      "images/A57-03.png",
+      "images/A57-04.png"
+    ],
+    "sortOrder": 31
+  },
+  {
+    "slug": "samsung-galaxy-a56-5g",
+    "name": "Samsung Galaxy A56 5G",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 52000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/A56-01.png",
+      "images/A56-02.png",
+      "images/A56-03.png",
+      "images/A56-04.png"
+    ],
+    "sortOrder": 32
+  },
+  {
+    "slug": "samsung-galaxy-a37-5g",
+    "name": "Samsung Galaxy A37 5G",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 47000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/A37-01.png",
+      "images/A37-02.png",
+      "images/A37-03.png",
+      "images/A37-04.png",
+      "images/A37-05.png",
+      "images/A37-06.png"
+    ],
+    "sortOrder": 33
+  },
+  {
+    "slug": "samsung-galaxy-a17-5g",
+    "name": "Samsung Galaxy A17 5G",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 26500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/A17-01.png",
+      "images/A17-02.png",
+      "images/A17-03.png"
+    ],
+    "sortOrder": 34
+  },
+  {
+    "slug": "samsung-galaxy-a07-4-128gb",
+    "name": "Samsung Galaxy A07 4/128GB",
+    "brand": "Samsung",
+    "category": "Phones",
+    "price": 16500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "VALUE PICK",
+    "images": [
+      "images/A07-01.png",
+      "images/A07-02.png"
+    ],
+    "sortOrder": 35
+  },
+  {
+    "slug": "nothing-phone-4a-pro",
+    "name": "Nothing Phone (4a) Pro",
+    "brand": "Nothing",
+    "category": "Phones",
+    "price": 62000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "STAND OUT",
+    "images": [
+      "images/NOTHING 4APRO-01.png"
+    ],
+    "sortOrder": 36
+  },
+  {
+    "slug": "infinix-hot-70-256gb",
+    "name": "Infinix HOT 70 256GB",
+    "brand": "Infinix",
+    "category": "Phones",
+    "price": 21000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/Ad Series-01.png",
+      "images/Final Ads-01.png",
+      "images/ChatGPT Image Sep 7, 2026, 08_56_40 PM.png"
+    ],
+    "sortOrder": 37
+  },
+  {
+    "slug": "redmi-note-15-pro-5g-12-512gb",
+    "name": "Redmi Note 15 Pro+ 5G 12/512GB",
+    "brand": "Xiaomi",
+    "category": "Phones",
+    "price": 62000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/Redmi Series Ad 2026-01.png"
+    ],
+    "sortOrder": 38
+  },
+  {
+    "slug": "redmi-17-6-256gb",
+    "name": "Redmi 17 6/256GB",
+    "brand": "Xiaomi",
+    "category": "Phones",
+    "price": 21500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/Redmi Series Ad 2026-04.png"
+    ],
+    "sortOrder": 39
+  },
+  {
+    "slug": "redmi-17-4-256gb",
+    "name": "Redmi 17 4/256GB",
+    "brand": "Xiaomi",
+    "category": "Phones",
+    "price": 19500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/Redmi Series Ad 2026-02.png"
+    ],
+    "sortOrder": 40
+  },
+  {
+    "slug": "redmi-17-4-128gb",
+    "name": "Redmi 17 4/128GB",
+    "brand": "Xiaomi",
+    "category": "Phones",
+    "price": 17500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "VALUE PICK",
+    "images": [
+      "images/Redmi Series Ad 2026-06.png"
+    ],
+    "sortOrder": 41
+  },
+  {
+    "slug": "redmi-15c-8-256gb",
+    "name": "Redmi 15C 8/256GB",
+    "brand": "Xiaomi",
+    "category": "Phones",
+    "price": 18500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "VALUE PICK",
+    "images": [
+      "images/Redmi Series Ad 2026-03.png"
+    ],
+    "sortOrder": 42
+  },
+  {
+    "slug": "redmi-a7-3-64gb",
+    "name": "Redmi A7 3/64GB",
+    "brand": "Xiaomi",
+    "category": "Phones",
+    "price": 11500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "EVERYDAY",
+    "images": [
+      "images/Redmi Series Ad 2026-05.png"
+    ],
+    "sortOrder": 43
+  },
+  {
+    "slug": "macbook-pro-14-m5",
+    "name": "MacBook Pro 14 M5",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 265000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "PRO POWER",
+    "images": [
+      "images/Apple MacBook Pro 14 M5-01.png",
+      "images/Apple MacBook Pro 14 M5-02.png",
+      "images/Apple MacBook Pro 14 M5-03.png"
+    ],
+    "sortOrder": 44
+  },
+  {
+    "slug": "ipad-pro-11-m5",
+    "name": "iPad Pro 11 M5",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 165000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "PRO ALL DAY",
+    "images": [
+      "images/APPLE IPAD PRO 11 M5-01.png",
+      "images/APPLE IPAD PRO 11 M5-02.png",
+      "images/APPLE IPAD PRO 11 M5-03.png"
+    ],
+    "sortOrder": 45
+  },
+  {
+    "slug": "ipad-air-13-m4",
+    "name": "iPad Air 13 M4",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 135000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BIG SCREEN",
+    "images": [
+      "images/APPLE IPAD AIR 13 M4-01.png",
+      "images/APPLE IPAD AIR 13 M4-02.png",
+      "images/APPLE IPAD AIR 13 M4-03.png",
+      "images/APPLE IPAD AIR 13 M4-04.png"
+    ],
+    "sortOrder": 46
+  },
+  {
+    "slug": "ipad-a16",
+    "name": "iPad A16",
+    "brand": "Apple",
+    "category": "Computers",
+    "price": 52000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "EVERYDAY",
+    "images": [
+      "images/APPLE IPAD A16-01.png"
+    ],
+    "sortOrder": 47
+  },
+  {
+    "slug": "samsung-galaxy-tab-s10-12-256gb-wi-fi",
+    "name": "Samsung Galaxy Tab S10+ 12/256GB Wi-Fi",
+    "brand": "Samsung",
+    "category": "Computers",
+    "price": 125000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "WORK & PLAY",
+    "images": [
+      "images/S10+ Tablet-01.png",
+      "images/S10+ Tablet-02.png",
+      "images/S10+ Tablet-03.png",
+      "images/S10+ Tablet-04.png",
+      "images/S10+ Tablet-05.png"
+    ],
+    "sortOrder": 48
+  },
+  {
+    "slug": "samsung-galaxy-tab-a11",
+    "name": "Samsung Galaxy Tab A11+",
+    "brand": "Samsung",
+    "category": "Computers",
+    "price": 32000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/Tab A11-01.png",
+      "images/Tab A11-02.png"
+    ],
+    "sortOrder": 49
+  },
+  {
+    "slug": "bose-quietcomfort-headphones",
+    "name": "Bose QuietComfort Headphones",
+    "brand": "Bose",
+    "category": "Audio",
+    "price": 45000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "QUIET TIME",
+    "images": [
+      "images/Bose QuietComfort-01.png",
+      "images/Bose QuietComfort-02.png",
+      "images/Bose QuietComfort-03.png"
+    ],
+    "sortOrder": 50
+  },
+  {
+    "slug": "jbl-partybox-720",
+    "name": "JBL PartyBox 720",
+    "brand": "JBL",
+    "category": "Audio",
+    "price": 165000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BRING THE SOUND",
+    "images": [
+      "images/JBL PARTYBOX 720-01.png",
+      "images/JBL PARTYBOX 720-02.png",
+      "images/JBL PARTYBOX 720-03.png",
+      "images/JBL PARTYBOX 720-04.png"
+    ],
+    "sortOrder": 51
+  },
+  {
+    "slug": "jbl-partybox-330",
+    "name": "JBL PartyBox 330",
+    "brand": "JBL",
+    "category": "Audio",
+    "price": 85000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GOOD TIMES",
+    "images": [
+      "images/Party Box 330-01.png",
+      "images/Party Box 330-02.png",
+      "images/Party Box 330-03.png"
+    ],
+    "sortOrder": 52
+  },
+  {
+    "slug": "jbl-partybox-130",
+    "name": "JBL PartyBox 130",
+    "brand": "JBL",
+    "category": "Audio",
+    "price": 52000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GOOD TIMES",
+    "images": [
+      "images/Party Box 130-01.png",
+      "images/Party Box 130-02.png",
+      "images/Party Box 130-03.png",
+      "images/Party Box 130-04.png"
+    ],
+    "sortOrder": 53
+  },
+  {
+    "slug": "jbl-boombox-4",
+    "name": "JBL Boombox 4",
+    "brand": "JBL",
+    "category": "Audio",
+    "price": 65000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "TAKE IT OUTSIDE",
+    "images": [
+      "images/JBL BOOMBOX4-02.png"
+    ],
+    "sortOrder": 54
+  },
+  {
+    "slug": "harman-kardon-onyx-studio-9",
+    "name": "Harman Kardon Onyx Studio 9",
+    "brand": "Harman Kardon",
+    "category": "Audio",
+    "price": 32000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "ICONIC DESIGN",
+    "images": [
+      "images/HARMAN-01.png",
+      "images/HARMAN-02.png",
+      "images/HARMAN-03.png",
+      "images/HARMAN-04.png",
+      "images/HARMAN-05.png"
+    ],
+    "sortOrder": 55
+  },
+  {
+    "slug": "ugreen-hitune-s3-open-ear-earbuds",
+    "name": "UGREEN HiTune S3 Open-Ear Earbuds",
+    "brand": "UGREEN",
+    "category": "Audio",
+    "price": 4500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "LITTLE UPGRADES",
+    "images": [
+      "images/UGREEN ACCESSORIES B-10.png"
+    ],
+    "sortOrder": 56
+  },
+  {
+    "slug": "ecoflow-delta-3-plus",
+    "name": "EcoFlow Delta 3 Plus",
+    "brand": "EcoFlow",
+    "category": "Power",
+    "price": 165000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BEAT THE BLACKOUT",
+    "images": [
+      "images/ECOFLOW DELTA 3PLUS-06.png"
+    ],
+    "sortOrder": 57
+  },
+  {
+    "slug": "ecoflow-e980",
+    "name": "EcoFlow E980",
+    "brand": "EcoFlow",
+    "category": "Power",
+    "price": 115000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BEAT THE BLACKOUT",
+    "images": [
+      "images/ECOFLOW E980-01.png",
+      "images/ECOFLOW E980-02.png",
+      "images/ECOFLOW E980-03.png",
+      "images/ECOFLOW E980-04.png"
+    ],
+    "sortOrder": 58
+  },
+  {
+    "slug": "ecoflow-river-3-ups",
+    "name": "EcoFlow River 3 UPS",
+    "brand": "EcoFlow",
+    "category": "Power",
+    "price": 42000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "POWER ON THE GO",
+    "images": [
+      "images/ECOFLOW RIVER 3 UPS-01.png",
+      "images/ECOFLOW RIVER 3 UPS-02.png",
+      "images/ECOFLOW RIVER 3 UPS-03.png"
+    ],
+    "sortOrder": 59
+  },
+  {
+    "slug": "nintendo-switch-lite",
+    "name": "Nintendo Switch Lite",
+    "brand": "Nintendo",
+    "category": "Gaming",
+    "price": 28000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "PLAY ANYWHERE",
+    "images": [
+      "images/Nintendo lite.jpg",
+      "images/Nintendo lite-01.png"
+    ],
+    "sortOrder": 60
+  },
+  {
+    "slug": "samsung-galaxy-watch-ultra2-47mm",
+    "name": "Samsung Galaxy Watch Ultra2 47mm",
+    "brand": "Samsung",
+    "category": "Wearables",
+    "price": 92000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GO FURTHER",
+    "images": [
+      "images/Galaxy Watch Ultra2-01.png",
+      "images/Galaxy Watch Ultra2-02.png",
+      "images/Galaxy Watch Ultra2-03.png",
+      "images/Galaxy Watch Ultra2-04.png",
+      "images/Galaxy Watch Ultra2-05.png"
+    ],
+    "sortOrder": 61
+  },
+  {
+    "slug": "samsung-galaxy-watch9-44mm",
+    "name": "Samsung Galaxy Watch9 44mm",
+    "brand": "Samsung",
+    "category": "Wearables",
+    "price": 46000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/GALAXY WATCH 9 44MM-01.png",
+      "images/GALAXY WATCH 9 44MM-02.png",
+      "images/GALAXY WATCH 9 44MM-03.png"
+    ],
+    "sortOrder": 62
+  },
+  {
+    "slug": "samsung-galaxy-watch9-40mm",
+    "name": "Samsung Galaxy Watch9 40mm",
+    "brand": "Samsung",
+    "category": "Wearables",
+    "price": 42000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "NEW IN",
+    "images": [
+      "images/GALAXY WATCH 9 40MM-01.png",
+      "images/GALAXY WATCH 9 40MM-02.png"
+    ],
+    "sortOrder": 63
+  },
+  {
+    "slug": "samsung-galaxy-watch8-44mm",
+    "name": "Samsung Galaxy Watch8 44mm",
+    "brand": "Samsung",
+    "category": "Wearables",
+    "price": 42000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "MADE FOR YOU",
+    "images": [
+      "images/WATCH 8 44MM-01.png",
+      "images/WATCH 8 44MM-02.png",
+      "images/WATCH 8 44MM-03.png",
+      "images/WATCH 8 44MM-04.png"
+    ],
+    "sortOrder": 64
+  },
+  {
+    "slug": "samsung-galaxy-fit3",
+    "name": "Samsung Galaxy Fit3",
+    "brand": "Samsung",
+    "category": "Wearables",
+    "price": 8500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "MOVE MORE",
+    "images": [
+      "images/Fit 3-01.png",
+      "images/Fit 3-02.png"
+    ],
+    "sortOrder": 65
+  },
+  {
+    "slug": "amazfit-t-rex-3-pro-44mm",
+    "name": "Amazfit T-Rex 3 Pro 44mm",
+    "brand": "Amazfit",
+    "category": "Wearables",
+    "price": 45000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BUILT TOUGH",
+    "images": [
+      "images/Trex.jpg"
+    ],
+    "sortOrder": 66
+  },
+  {
+    "slug": "amazfit-t-rex-3",
+    "name": "Amazfit T-Rex 3",
+    "brand": "Amazfit",
+    "category": "Wearables",
+    "price": 33000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "BUILT TOUGH",
+    "images": [
+      "images/Trex 3.jpg"
+    ],
+    "sortOrder": 67
+  },
+  {
+    "slug": "amazfit-balance-2",
+    "name": "Amazfit Balance 2",
+    "brand": "Amazfit",
+    "category": "Wearables",
+    "price": 38000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "MADE FOR YOU",
+    "images": [
+      "images/Balance.jpg"
+    ],
+    "sortOrder": 68
+  },
+  {
+    "slug": "amazfit-active-3-premium",
+    "name": "Amazfit Active 3 Premium",
+    "brand": "Amazfit",
+    "category": "Wearables",
+    "price": 23000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "MOVE MORE",
+    "images": [
+      "images/Active.jpg"
+    ],
+    "sortOrder": 69
+  },
+  {
+    "slug": "amazfit-bip-6",
+    "name": "Amazfit Bip 6",
+    "brand": "Amazfit",
+    "category": "Wearables",
+    "price": 13500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "GREAT VALUE",
+    "images": [
+      "images/Bip.jpg"
+    ],
+    "sortOrder": 70
+  },
+  {
+    "slug": "apple-magic-keyboard-for-ipad-pro-13",
+    "name": "Apple Magic Keyboard for iPad Pro 13",
+    "brand": "Apple",
+    "category": "Accessories",
+    "price": 55000,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "WORK ANYWHERE",
+    "images": [
+      "images/Apple Magic Keyboard for iPad 13-01.png",
+      "images/Apple Magic Keyboard for iPad 13-02.png"
+    ],
+    "sortOrder": 71
+  },
+  {
+    "slug": "apple-pencil-usb-c",
+    "name": "Apple Pencil (USB-C)",
+    "brand": "Apple",
+    "category": "Accessories",
+    "price": 13500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "CREATE MORE",
+    "images": [
+      "images/APPLE PENCIL TYPE C-01.png",
+      "images/APPLE PENCIL TYPE C-02.png"
+    ],
+    "sortOrder": 72
+  },
+  {
+    "slug": "samsung-kindsuit-case-for-galaxy-z-fold8",
+    "name": "Samsung Kindsuit Case for Galaxy Z Fold8",
+    "brand": "Samsung",
+    "category": "Accessories",
+    "price": 9500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "PROTECT IT",
+    "images": [
+      "images/Z-FOLD8 WIDE KINDSUIT CASE-01.png"
+    ],
+    "sortOrder": 73
+  },
+  {
+    "slug": "carbon-magnet-case-for-galaxy-z-fold8",
+    "name": "Carbon Magnet Case for Galaxy Z Fold8",
+    "brand": "Samsung",
+    "category": "Accessories",
+    "price": 6500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "PROTECT IT",
+    "images": [
+      "images/Z FOLD8 WIDE CARBON MAGNET CASE-01.png",
+      "images/Z FOLD8 WIDE CARBON MAGNET CASE-02.png",
+      "images/Z FOLD8 WIDE CARBON MAGNET CASE-03.png",
+      "images/Z FOLD8 WIDE CARBON MAGNET CASE-04.png"
+    ],
+    "sortOrder": 74
+  },
+  {
+    "slug": "fujifilm-instax-mini-film-20-shots",
+    "name": "Fujifilm Instax Mini Film (20 shots)",
+    "brand": "Fujifilm",
+    "category": "Accessories",
+    "price": 2800,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "CAPTURE IT",
+    "images": [
+      "images/INSTAX-01.png"
+    ],
+    "sortOrder": 75
+  },
+  {
+    "slug": "ugreen-nexode-pro-165w-20000mah-power-bank",
+    "name": "UGREEN Nexode Pro 165W 20000mAh Power Bank",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 11500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "POWER ON THE GO",
+    "images": [
+      "images/UGREEN ACCESSORIES B-06.png"
+    ],
+    "sortOrder": 76
+  },
+  {
+    "slug": "ugreen-145w-25000mah-power-bank",
+    "name": "UGREEN 145W 25000mAh Power Bank",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 9500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "POWER ON THE GO",
+    "images": [
+      "images/UGREEN ACCESSORIES B-02.png"
+    ],
+    "sortOrder": 77
+  },
+  {
+    "slug": "ugreen-20w-10000mah-power-bank",
+    "name": "UGREEN 20W 10000mAh Power Bank",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 3800,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "POWER ON THE GO",
+    "images": [
+      "images/UGREEN ACCESSORIES B-05.png"
+    ],
+    "sortOrder": 78
+  },
+  {
+    "slug": "ugreen-nexode-s-100w-4-port-gan-charger",
+    "name": "UGREEN Nexode S 100W 4-Port GaN Charger",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 6500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "CHARGE FASTER",
+    "images": [
+      "images/UGREEN ACCESSORIES B-09.png"
+    ],
+    "sortOrder": 79
+  },
+  {
+    "slug": "ugreen-uno-65w-3-port-gan-charger",
+    "name": "UGREEN Uno 65W 3-Port GaN Charger",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 4500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "CHARGE FASTER",
+    "images": [
+      "images/UGREEN ACCESSORIES B-03.png"
+    ],
+    "sortOrder": 80
+  },
+  {
+    "slug": "ugreen-nexode-60w-car-charger-with-retractable-cable",
+    "name": "UGREEN Nexode 60W Car Charger with Retractable Cable",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 3200,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "ON THE ROAD",
+    "images": [
+      "images/UGREEN ACCESSORIES B-08.png"
+    ],
+    "sortOrder": 81
+  },
+  {
+    "slug": "ugreen-60w-2-port-car-charger",
+    "name": "UGREEN 60W 2-Port Car Charger",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 2500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "ON THE ROAD",
+    "images": [
+      "images/UGREEN ACCESSORIES B-01.png"
+    ],
+    "sortOrder": 82
+  },
+  {
+    "slug": "ugreen-240w-usb-c-to-usb-c-cable-1m",
+    "name": "UGREEN 240W USB-C to USB-C Cable 1m",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 1800,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "LITTLE UPGRADES",
+    "images": [
+      "images/UGREEN ACCESSORIES B-04.png"
+    ],
+    "sortOrder": 83
+  },
+  {
+    "slug": "ugreen-2-4g-wireless-mouse",
+    "name": "UGREEN 2.4G Wireless Mouse",
+    "brand": "UGREEN",
+    "category": "Accessories",
+    "price": 1500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "LITTLE UPGRADES",
+    "images": [
+      "images/UGREEN ACCESSORIES B-07.png"
+    ],
+    "sortOrder": 84
+  },
+  {
+    "slug": "lexar-jumpdrive-fingerprint-f35-256gb",
+    "name": "Lexar JumpDrive Fingerprint F35 256GB",
+    "brand": "Lexar",
+    "category": "Accessories",
+    "price": 9500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "KEEP IT SAFE",
+    "images": [
+      "images/Lexar-09.png",
+      "images/lexar-03.png"
+    ],
+    "sortOrder": 85
+  },
+  {
+    "slug": "lexar-jumpdrive-fingerprint-f35-128gb",
+    "name": "Lexar JumpDrive Fingerprint F35 128GB",
+    "brand": "Lexar",
+    "category": "Accessories",
+    "price": 6500,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "KEEP IT SAFE",
+    "images": [
+      "images/Lexar-10.png",
+      "images/lexar-04.png"
+    ],
+    "sortOrder": 86
+  },
+  {
+    "slug": "lexar-jumpdrive-fingerprint-f35-64gb",
+    "name": "Lexar JumpDrive Fingerprint F35 64GB",
+    "brand": "Lexar",
+    "category": "Accessories",
+    "price": 4800,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "KEEP IT SAFE",
+    "images": [
+      "images/Lexar-11.png",
+      "images/lexar-05.png"
+    ],
+    "sortOrder": 87
+  },
+  {
+    "slug": "lexar-jumpdrive-s47-128gb",
+    "name": "Lexar JumpDrive S47 128GB",
+    "brand": "Lexar",
+    "category": "Accessories",
+    "price": 1900,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "LITTLE UPGRADES",
+    "images": [
+      "images/Lexar-08.png",
+      "images/lexar-02.png"
+    ],
+    "sortOrder": 88
+  },
+  {
+    "slug": "lexar-jumpdrive-s47-64gb",
+    "name": "Lexar JumpDrive S47 64GB",
+    "brand": "Lexar",
+    "category": "Accessories",
+    "price": 1200,
+    "priceFrom": false,
+    "priceConfirmed": false,
+    "badge": "LITTLE UPGRADES",
+    "images": [
+      "images/Lexar-07.png",
+      "images/lexar-01.png"
+    ],
+    "sortOrder": 89
+  }
+]

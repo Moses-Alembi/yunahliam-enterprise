@@ -1,0 +1,20 @@
+{
+  "name": "yunahliam-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for the Yunahliam Enterprise store: catalogue, orders, M-Pesa payments and admin API.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "node --watch --env-file-if-exists=.env src/server.js",
+    "seed": "node --env-file-if-exists=.env scripts/seed.js",
+    "create-admin": "node --env-file-if-exists=.env scripts/create-admin.js",
+    "test": "node --test --test-reporter=spec \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

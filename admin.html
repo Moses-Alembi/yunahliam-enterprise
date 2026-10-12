@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0975BA">
+  <title>Store admin | Yunahliam Enterprise</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .admin-bar { background: linear-gradient(90deg, var(--brand-dark), var(--brand)); color: #fff; position: sticky; top: 0; z-index: 50; }
+    .admin-bar .wrap { display: flex; align-items: center; gap: 16px; min-height: 60px; flex-wrap: wrap; }
+    .admin-bar .wordmark-logo { height: 40px; }
+    .admin-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+    .admin-tabs button { background: none; border: 0; color: #fff; padding: 8px 12px; border-radius: 6px; font-weight: 500; opacity: .9; }
+    .admin-tabs button[aria-selected="true"], .admin-tabs button:hover { background: rgba(255,255,255,.18); opacity: 1; }
+    .admin-tabs .tab-badge { background: var(--cta); color: var(--cta-ink); border-radius: 9px; font-size: 11px; font-weight: 700; padding: 1px 6px; margin-left: 4px; }
+    .admin-user { margin-left: auto; display: flex; gap: 10px; align-items: center; font-size: 14px; }
+    .admin-user button { background: rgba(255,255,255,.18); border: 0; color: #fff; border-radius: 6px; padding: 7px 12px; font-weight: 500; }
+    .admin-main { padding: 20px 0 60px; display: grid; gap: 16px; }
+    .login-card { max-width: 380px; margin: 60px auto; padding: 28px; display: grid; gap: 14px; }
+    .login-card img { height: 56px; width: auto; justify-self: center; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+    .stat-card { padding: 16px; display: grid; gap: 4px; border: 0; text-align: left; }
+    .stat-card strong { font-size: 26px; color: var(--brand-dark); }
+    .stat-card span { color: var(--muted); font-size: 13px; }
+    .stat-card.alert strong { color: #B42318; }
+    button.stat-card:hover { box-shadow: var(--shadow-hover); }
+    .toolbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; padding: 12px 16px; }
+    .toolbar h1 { font-size: 20px; margin-right: auto; }
+    .toolbar input[type="search"], .toolbar select { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; background: #fff; }
+    .toolbar label { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; }
+    .table-wrap { overflow-x: auto; }
+    .admin-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .admin-table th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    .admin-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    .admin-table tr.clickable { cursor: pointer; }
+    .admin-table tr.clickable:hover td { background: #f5f8fa; }
+    .admin-table img { width: 44px; height: 44px; object-fit: contain; background: #f7f9fb; border-radius: 6px; }
+    .admin-table input[type="number"] { width: 110px; border: 1px solid var(--line); border-radius: 6px; padding: 7px 8px; }
+    .admin-table input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--brand); }
+    .admin-table tr.dirty td { background: #FFF8EB; }
+    .admin-table .muted { color: var(--muted); font-size: 12.5px; }
+    .pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: 700; background: #eef2f5; white-space: nowrap; }
+    .pill-pending_payment, .pill-new, .pill-pending { background: #FFF3DC; color: #8A5300; }
+    .pill-paid, .pill-handled, .pill-delivered { background: #E5F6EC; color: #157F3D; }
+    .pill-processing, .pill-dispatched { background: var(--brand-soft); color: var(--brand-dark); }
+    .pill-cancelled, .pill-failed, .pill-reversed, .pill-amount_mismatch { background: #FDECEC; color: #B42318; }
+    .detail-card { padding: 20px; display: grid; gap: 14px; }
+    .detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 24px; }
+    .detail-grid dt { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .detail-grid dd { margin: 2px 0 0; white-space: pre-wrap; }
+    .action-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .action-row select { border: 1px solid var(--line); border-radius: 6px; padding: 10px; background: #fff; }
+    .product-form { padding: 20px; }
+    .product-form .form-row.three { grid-template-columns: 1fr 1fr 1fr; }
+    .product-form select { width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 11px 12px; background: #fff; }
+    .checks { display: flex; gap: 18px; flex-wrap: wrap; }
+    .checks label { display: inline-flex !important; gap: 8px !important; align-items: center; }
+    .enquiry-message { white-space: pre-wrap; max-width: 420px; }
+    .empty-row { text-align: center; color: var(--muted); padding: 30px !important; }
+    @media (max-width: 860px) { body { padding-bottom: 0; } .product-form .form-row.three { grid-template-columns: 1fr; } }
+  </style>
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <header class="admin-bar">
+    <div class="wrap">
+      <a href="index.html" target="_blank" rel="noopener" aria-label="Open the store"><img class="wordmark-logo" src="images/logo.png" alt="Yunahliam Enterprise" width="487" height="240"></a>
+      <nav class="admin-tabs" role="tablist" aria-label="Admin sections" hidden>
+        <button type="button" role="tab" data-tab="dashboard">Dashboard</button>
+        <button type="button" role="tab" data-tab="orders">Orders <span class="tab-badge" data-badge="toFulfil" hidden></span></button>
+        <button type="button" role="tab" data-tab="products">Products</button>
+        <button type="button" role="tab" data-tab="enquiries">Enquiries <span class="tab-badge" data-badge="newEnquiries" hidden></span></button>
+      </nav>
+      <div class="admin-user" hidden><span id="admin-name"></span><button type="button" id="logout">Log out</button></div>
+    </div>
+  </header>
+  <main class="wrap admin-main" id="admin"><p class="detail-loading">Loading…</p></main>
+</body>
+</html>
