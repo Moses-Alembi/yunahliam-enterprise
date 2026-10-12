@@ -1,8 +1,9 @@
 # Yunahliam Enterprise — hardening for static/LiteSpeed hosting.
 # Place this file in the web root (same folder as index.html).
 
-# ---------- Force HTTPS ----------
 RewriteEngine On
+
+# ---------- Force HTTPS ----------
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
@@ -11,13 +12,26 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteRule ^server/data/products\.seed\.json$ - [L]
 RewriteRule ^server(/|$) - [F,L]
 
-# Block source, config, docs and data files anywhere in the tree.
+# Never serve dotfiles/dotfolders (.git, .env, .htpasswd, ...).
+RewriteRule (^|/)\.(?!well-known) - [F]
+
+# ---------- Clean URLs (no .html) ----------
+# Send /index or /index.html to the site root.
+RewriteCond %{THE_REQUEST} \s/+index(\.html)?[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+# Redirect any /page.html the browser asks for to the clean /page (query string is kept).
+RewriteCond %{THE_REQUEST} \s/+([^.\s?]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+# Serve /page from page.html behind the scenes, without redirecting.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# ---------- Block source, config, docs and data files anywhere in the tree ----------
 <FilesMatch "(^\.|\.(md|docx|lock|example|db|db-wal|db-shm|sqlite|yml|yaml|sh)$|^Dockerfile$|^package(-lock)?\.json$|^\.?env)">
   Require all denied
 </FilesMatch>
-
-# Never serve dotfiles/dotfolders (.git, .env, .htpasswd, ...).
-RewriteRule (^|/)\.(?!well-known) - [F]
 
 # ---------- Keep the admin panel out of search engines ----------
 <FilesMatch "^admin\.html$">
