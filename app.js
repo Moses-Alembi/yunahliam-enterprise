@@ -87,10 +87,17 @@ function showroomNotice(what) {
 
 let productsPromise = null;
 function loadProducts() {
-  productsPromise ??= api("/api/products?limit=500").then((data) => data.products).catch(loadShowroomProducts).catch((error) => {
-    productsPromise = null;
-    throw error;
-  });
+  productsPromise ??= api("/api/products?limit=500")
+    .then((data) => {
+      // If the API is not actually running (e.g. a host placeholder answered), fall back to the showroom.
+      if (!data || !Array.isArray(data.products)) throw Object.assign(new Error("Store API unavailable"), { status: 0 });
+      return data.products;
+    })
+    .catch(loadShowroomProducts)
+    .catch((error) => {
+      productsPromise = null;
+      throw error;
+    });
   return productsPromise;
 }
 function categoryImage(products, key) {
