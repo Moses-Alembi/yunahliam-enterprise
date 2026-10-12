@@ -1,0 +1,42 @@
+# Yunahliam Enterprise — hardening for static/LiteSpeed hosting.
+# Place this file in the web root (same folder as index.html).
+
+# ---------- Force HTTPS ----------
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# ---------- Hide server-side source, but keep the showroom's catalogue ----------
+# The storefront reads server/data/products.seed.json when the API is offline; allow only that file.
+RewriteRule ^server/data/products\.seed\.json$ - [L]
+RewriteRule ^server(/|$) - [F,L]
+
+# Block source, config, docs and data files anywhere in the tree.
+<FilesMatch "(^\.|\.(md|docx|lock|example|db|db-wal|db-shm|sqlite|yml|yaml|sh)$|^Dockerfile$|^package(-lock)?\.json$|^\.?env)">
+  Require all denied
+</FilesMatch>
+
+# Never serve dotfiles/dotfolders (.git, .env, .htpasswd, ...).
+RewriteRule (^|/)\.(?!well-known) - [F]
+
+# ---------- Keep the admin panel out of search engines ----------
+<FilesMatch "^admin\.html$">
+  Header always set X-Robots-Tag "noindex, nofollow"
+</FilesMatch>
+
+# ---------- Security headers ----------
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src https://maps.google.com https://www.google.com; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'"
+  # Don't cache the private pages.
+  <FilesMatch "^(admin|cart|checkout|order)\.html$">
+    Header always set Cache-Control "no-store"
+  </FilesMatch>
+</IfModule>
+
+# ---------- No directory listings ----------
+Options -Indexes

@@ -17,8 +17,22 @@ export function createApp({ db, config, pesapal }) {
   app.disable("x-powered-by");
   app.set("trust proxy", config.trustProxy);
 
+  // Kept in sync with the .htaccess used on static hosting.
+  const csp = [
+    "default-src 'self'", "script-src 'self'", "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "font-src 'self' https://fonts.gstatic.com", "img-src 'self' data:", "connect-src 'self'",
+    "frame-src https://maps.google.com https://www.google.com", "base-uri 'self'", "object-src 'none'",
+    "frame-ancestors 'self'", "form-action 'self'"
+  ].join("; ");
   app.use((req, res, next) => {
-    res.set({ "X-Content-Type-Options": "nosniff", "Referrer-Policy": "strict-origin-when-cross-origin", "X-Frame-Options": "SAMEORIGIN" });
+    res.set({
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+      "Content-Security-Policy": csp
+    });
+    if (req.secure) res.set("Strict-Transport-Security", "max-age=31536000");
     next();
   });
 

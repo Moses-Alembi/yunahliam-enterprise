@@ -125,7 +125,7 @@ async function refreshBadges() {
 /* ---------- Dashboard ---------- */
 async function dashboard() {
   const summary = await api("/api/admin/summary");
-  const card = (value, label, hash, alert = false) => `<button class="panel stat-card${alert && value ? " alert" : ""}" type="button" onclick="location.hash='${hash}'"><strong>${esc(value)}</strong><span>${esc(label)}</span></button>`;
+  const card = (value, label, hash, alert = false) => `<button class="panel stat-card${alert && value ? " alert" : ""}" type="button" data-goto="${esc(hash)}"><strong>${esc(value)}</strong><span>${esc(label)}</span></button>`;
   root.innerHTML = `
     <div class="panel toolbar"><h1>Dashboard</h1><a class="button button-ghost" href="index.html" target="_blank" rel="noopener">View store ↗</a></div>
     <div class="stat-grid">
@@ -138,6 +138,7 @@ async function dashboard() {
     </div>
     ${summary.unconfirmedPrices ? `<p class="notice">Products with unconfirmed prices show a guide price and can only be ordered by phone. Open <a href="#products">Products</a>, check each price and tick <b>Confirmed</b> to let customers buy it online.</p>` : ""}
     ${summary.paymentIssues ? '<p class="notice notice-error">Some payments were reversed or did not match the order total. Check them in the Pesapal dashboard before dispatching.</p>' : ""}`;
+  root.querySelectorAll("[data-goto]").forEach((node) => node.addEventListener("click", () => { location.hash = node.dataset.goto; }));
 }
 
 /* ---------- Orders ---------- */
