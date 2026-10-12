@@ -60,9 +60,34 @@ async function api(path, { method = "GET", body } = {}) {
   return data;
 }
 
+// Showroom mode: on static hosting (e.g. GitHub Pages) there is no API, so the catalogue comes from the
+// seed file and everything is "call to order". Cart, checkout and enquiries need the real server.
+let showroom = false;
+async function loadShowroomProducts(apiError) {
+  let seed;
+  try {
+    const response = await fetch("server/data/products.seed.json");
+    if (!response.ok) throw new Error();
+    seed = await response.json();
+  } catch {
+    throw apiError;
+  }
+  showroom = true;
+  document.documentElement.classList.add("showroom");
+  return seed.map((item, index) => ({
+    id: index + 1, slug: item.slug, name: item.name, brand: item.brand, category: item.category, price: item.price,
+    priceFrom: Boolean(item.priceFrom), priceConfirmed: Boolean(item.priceConfirmed), badge: item.badge || null,
+    description: item.description || "", specs: item.specs || {}, images: item.images, inStock: true, active: true,
+    sortOrder: item.sortOrder ?? index, purchasable: false
+  })).sort((first, second) => first.sortOrder - second.sortOrder);
+}
+function showroomNotice(what) {
+  return `<section class="panel empty-cart"><h1>${esc(what)} is coming soon</h1><p>For now, call or WhatsApp us on <a href="tel:${storePhone.tel}">${storePhone.display}</a> to order. We will confirm price, stock and delivery for you.</p><a class="button button-primary" href="shop.html">Browse products</a></section>`;
+}
+
 let productsPromise = null;
 function loadProducts() {
-  productsPromise ??= api("/api/products?limit=500").then((data) => data.products).catch((error) => {
+  productsPromise ??= api("/api/products?limit=500").then((data) => data.products).catch(loadShowroomProducts).catch((error) => {
     productsPromise = null;
     throw error;
   });
@@ -514,7 +539,11 @@ if (cartPage) {
     else return;
     render();
   });
-  loadProducts().then((list) => { products = list; render(); }).catch((error) => { cartPage.innerHTML = errorPanel(error.message); });
+  loadProducts().then((list) => {
+    if (showroom) { cartPage.innerHTML = showroomNotice("Online ordering"); return; }
+    products = list;
+    render();
+  }).catch((error) => { cartPage.innerHTML = errorPanel(error.message); });
 }
 
 /* ---------- Orders kept in this browser ---------- */
@@ -536,7 +565,9 @@ async function startPayment(orderNumber, accessKey) {
 const checkoutPage = document.querySelector("#checkout-page");
 if (checkoutPage) {
   const customerKey = "yunahliam-customer";
-  Promise.all([loadProducts(), api("/api/delivery-options")]).then(([products, { deliveryOptions }]) => {
+  loadProducts().then(async (products) => {
+    if (showroom) { checkoutPage.innerHTML = showroomNotice("Online checkout"); return; }
+    const { deliveryOptions } = await api("/api/delivery-options");
     const lines = cartLines(products);
     if (!lines.length) {
       checkoutPage.innerHTML = `<section class="panel empty-cart"><h1>Your cart is empty</h1><a class="button button-primary" href="shop.html">Start shopping</a></section>`;
@@ -649,6 +680,8 @@ if (orderPage) {
   };
   const paymentText = { pending: "Waiting for payment", paid: "Paid", failed: "Failed", reversed: "Reversed", amount_mismatch: "Under review" };
 
+  loadProducts().catch(() => {}).then(() => {
+  if (showroom) { orderPage.innerHTML = showroomNotice("Order tracking"); return; }
   if (!orderNumber || !accessKey) {
     const orders = readStored(ordersKey, []);
     orderPage.innerHTML = `<div class="panel section-head"><h1>Your orders</h1></div>
@@ -717,6 +750,7 @@ if (orderPage) {
     };
     refresh(returnedFromPayment);
   }
+  });
 }
 
 /* ---------- Contact page: enquiry form ---------- */
@@ -748,7 +782,7 @@ if (enquiryForm) {
       status.textContent = "Thank you! Your message has reached our team. We usually reply within working hours the same day.";
     } catch (error) {
       status.className = "form-status notice notice-error";
-      status.textContent = error.message;
+      status.textContent = [400, 429].includes(error.status) ? error.message : `We could not send your message online. Please call or WhatsApp us on ${storePhone.display}.`;
     }
     status.hidden = false;
     button.disabled = false;

@@ -514,3 +514,7 @@ section.notice p { margin: 6px 0 0; }
   .order-hero { padding: 18px; }
   .order-hero h1 { font-size: 20px; }
 }
+
+/* Showroom mode (static hosting without the store API): browsing only, no cart */
+.showroom .header-cart, .showroom .bottom-nav a[href="cart.html"] { display: none; }
+@media (max-width: 860px) { .showroom .bottom-nav { grid-template-columns: repeat(4, 1fr); } }
