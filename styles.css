@@ -40,7 +40,7 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
 .wrap { width: min(var(--wrap), 100% - 32px); margin-inline: auto; }
 
 /* ---------- Header ---------- */
-.site-header { background: linear-gradient(90deg, var(--brand-dark), var(--brand)); color: #fff; position: sticky; top: 0; z-index: 50; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+.site-header { background: #fff; color: var(--text); position: sticky; top: 0; z-index: 50; border-bottom: 3px solid var(--brand); box-shadow: 0 2px 8px rgba(5, 63, 102, .08); }
 .header-bar { display: flex; align-items: center; gap: 20px; height: 64px; }
 .wordmark { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .02em; }
 .wordmark-icon { width: 38px; height: 38px; border-radius: 10px; background: #fff; color: var(--brand); display: grid; place-items: center; font-size: 22px; font-weight: 900; }
@@ -49,17 +49,17 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
 .wordmark-logo { display: block; height: 46px; width: auto; background: #fff; border-radius: 8px; padding: 3px 8px; }
 .footer-brand .wordmark-logo { height: 64px; padding: 0; }
 .main-nav { display: flex; gap: 4px; margin-left: 12px; }
-.main-nav a { padding: 8px 12px; border-radius: 6px; font-weight: 500; opacity: .92; }
-.main-nav a:hover, .main-nav a.active { background: rgba(255,255,255,.18); opacity: 1; }
+.main-nav a { padding: 8px 12px; border-radius: 6px; font-weight: 500; color: var(--text); }
+.main-nav a:hover, .main-nav a.active { background: var(--brand-soft); color: var(--brand-dark); }
 .header-actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
-.header-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border-radius: 6px; font-weight: 500; }
-.header-link:hover { background: rgba(255,255,255,.18); }
-.saved-count { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: #fff; color: var(--brand-dark); font-size: 12px; font-weight: 700; display: inline-grid; place-items: center; }
+.header-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border-radius: 6px; font-weight: 500; color: var(--brand-deep); }
+.header-link:hover { background: var(--brand-soft); }
+.saved-count { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: var(--brand); color: #fff; font-size: 12px; font-weight: 700; display: inline-grid; place-items: center; }
 .saved-count:empty { display: none; }
 .button-sell { background: var(--cta); color: var(--cta-ink); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; padding: 10px 22px; border-radius: 6px; box-shadow: 0 2px 0 var(--cta-dark); }
 .button-sell:hover { background: var(--cta-dark); }
 .menu-toggle { display: none; background: none; border: 0; width: 40px; height: 40px; padding: 8px; margin-left: auto; }
-.menu-toggle span { display: block; height: 2px; background: #fff; border-radius: 2px; margin: 6px 0; transition: transform .2s; }
+.menu-toggle span { display: block; height: 2px; background: var(--brand-dark); border-radius: 2px; margin: 6px 0; transition: transform .2s; }
 .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
 .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
@@ -301,7 +301,7 @@ h1, h2, h3 { margin: 0; line-height: 1.2; }
   .service-strip { grid-template-columns: 1fr; }
   .header-actions .header-link, .header-actions .button-sell { display: none; }
   .menu-toggle { display: block; }
-  .main-nav { display: none; position: absolute; left: 0; right: 0; top: 64px; background: var(--brand-dark); flex-direction: column; padding: 8px 16px 14px; margin: 0; }
+  .main-nav { display: none; position: absolute; left: 0; right: 0; top: 64px; background: #fff; border-bottom: 3px solid var(--brand); box-shadow: 0 8px 16px rgba(5, 63, 102, .1); flex-direction: column; padding: 8px 16px 14px; margin: 0; }
   .main-nav.open { display: flex; }
   .bottom-nav { display: grid; grid-template-columns: repeat(4, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -2px 10px rgba(0,0,0,.06); padding-bottom: env(safe-area-inset-bottom); }
   .bottom-nav a { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 7px; font-size: 11px; color: var(--muted); font-weight: 500; }
